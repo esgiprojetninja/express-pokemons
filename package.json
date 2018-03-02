@@ -1,0 +1,38 @@
+{
+  "name": "koa-todos",
+  "version": "1.0.0",
+  "description": "basic todos management with koa framework",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/dydyFos/koa-todos.git"
+  },
+  "keywords": [
+    "koa",
+    "nodejs",
+    "js"
+  ],
+  "author": "dydyFos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dydyFos/koa-todos/issues"
+  },
+  "homepage": "https://github.com/dydyFos/koa-todos#readme",
+  "dependencies": {
+    "koa": "^2.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.18.1",
+    "eslint-config-koa": "^2.0.2",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "nodemon": "^1.17.1"
+  }
+}
