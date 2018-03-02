@@ -6,6 +6,7 @@ const Cors = require('koa-cors');
 const Helmet = require('koa-helmet');
 const BodyParser = require('koa-bodyparser');
 const Respond = require('koa-respond');
+const Database = require('./db');
 
 const app = new Koa();
 const router = new Router();
@@ -17,6 +18,8 @@ app.use(Cors({
     'Access-Control-Allow-Methods': ['GET', 'PUT', 'POST', 'DELETE'],
     'Access-Control-Allow-Headers': ['Content-Type', 'Authorization']
 }));
+
+Database.connect();
 
 // Parser middleware
 app.use(BodyParser({
