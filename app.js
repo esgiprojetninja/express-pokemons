@@ -7,6 +7,7 @@ const Helmet = require('koa-helmet');
 const BodyParser = require('koa-bodyparser');
 const Respond = require('koa-respond');
 const Database = require('./db');
+const globals = require('./utils/consts');
 
 const app = new Koa();
 const router = new Router();
@@ -31,7 +32,7 @@ app.use(BodyParser({
     }
 }));
 
-if (process.env.NODE_ENV === 'dev') {
+if (process.env.NODE_ENV === globals.devEnv) {
     app.use(Logger());
 }
 
