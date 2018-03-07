@@ -5,6 +5,7 @@
   "scripts": {
     "start": "node ./bin/www",
     "test": "jest --notify --config=tests/jest.config.json --watch",
+    "testrun": "jest --notify --config=tests/jest.config.json",
     "codecov": "npm run testrun -- --coverage && codecov",
     "serve": "nodemon ./bin/www",
     "eslint": "eslint . --debug --ignore-path .gitignore"
