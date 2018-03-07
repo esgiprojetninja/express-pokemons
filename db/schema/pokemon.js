@@ -3,6 +3,7 @@ const { Schema } = mongoose;
 const COLLECTION_NAME = "Pokemon";
 const SEED_NUMBER = 10;
 let COLLECTION = null;
+const fs = require('fs');
 
 const _emptyCollection = callback => {
     const name = `${COLLECTION_NAME.toLowerCase()}s`;
@@ -34,25 +35,33 @@ const _emptyCollection = callback => {
 const _createCollection = () => {
     COLLECTION = mongoose.model(COLLECTION_NAME, new Schema({
         name: String,
-        height: String,
-        weight: String,
         description: String,
-        color: String
+        id_parent: Number,
+        image: String,
+        id_national: Number,
+        type1: Number,
+        type2: Number,
     }));
     console.warn(`Created ${COLLECTION_NAME} Collection`);
 };
 
 const seed = () => {
-    for (let index = 0; index < SEED_NUMBER; index++) {
+
+    pokemonData = JSON.parse(fs.readFileSync("pokemon_data.json", "utf8"));
+    
+    for (item in pokemonData) {
         const todo = new COLLECTION({
-            name: `Poulay-${index}`,
-            height: `cheeinmass-height-${index}`,
-            weight: `cheeinmass-weight-${index}`,
-            description: `Me I just want-${index}`,
-            color: `color-${index}`
+            name: pokemonData[item].name,
+            description: pokemonData[item].description,
+            id_parent: pokemonData[item].id_parent,
+            image: pokemonData[item].image,
+            id_national: pokemonData[item].id_national,
+            type1: pokemonData[item].type1,
+            type2: pokemonData[item].type2
         });
         todo.save();
     }
+        
     console.warn(`Populated ${COLLECTION_NAME} Collection`);
 };
 
