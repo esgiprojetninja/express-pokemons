@@ -1,27 +1,27 @@
 require("dotenv").config({ path: "./.env.local" });
-const chai = require('chai');
-const chaiHttp = require('chai-http');
+const chai = require("chai");
+const chaiHttp = require("chai-http");
 chai.use(chaiHttp);
 process.env.PORT = process.env.TEST_PORT;
-const server = require('../../bin/www');
+const server = require("../../bin/www");
 const ROUTE_PREFIX = "pokemons";
 
-describe('GET /pokemons', () => {
-    it('should return array', done => {
+describe("GET /pokemons", () => {
+    it("should return array", done => {
         chai.request(server)
             .get(`/${ROUTE_PREFIX}`)
             .end((err, res) => {
                 expect(err).toBeNull();
                 expect(res.status).toBe(200);
                 expect(res.ok).toBe(true);
-                expect(res.type).toBe('application/json');
-                expect(res.body).toEqual({pokemons: []});
+                expect(res.type).toBe("application/json");
+                expect(res.body).toEqual({ pokemons: [] });
                 done();
             });
     });
 
 
-    it('should provoke 404', done => {
+    it("should provoke 404", done => {
         chai.request(server)
             .get(`/${ROUTE_PREFIX}/uhoh`)
             .end((err, res) => {
@@ -35,5 +35,5 @@ describe('GET /pokemons', () => {
 
     afterAll(async () => {
         await server.close();
-    })
+    });
 });

@@ -10,7 +10,7 @@ app.set("port", port);
 
 const server = app.listen(app.get("port"), () => {
     if (process.env.NODE_ENV === devEnv) {
-        console.log(`Express server listening on port ${port}`);
+        console.warn(`Express server listening on port ${port}`);
     }
 });
 server.on("error", onError);
@@ -44,16 +44,16 @@ function onError(error) {
         throw error;
     }
     
-    const bind = typeof port === "string" ? "Pipe " + port : "Port " + port;
+    const bind = typeof port === "string" ? `Pipe ${port}` : `Port ${port}`;
     
     // handle specific listen errors with friendly messages
     switch (error.code) {
     case "EACCES":
-        console.error(bind + " requires elevated privileges");
+        console.error(`${bind  } requires elevated privileges`);
         process.exit(1);
         break;
     case "EADDRINUSE":
-        console.error(bind + " is already in use");
+        console.error(`${bind  } is already in use`);
         process.exit(1);
         break;
     default:
@@ -69,7 +69,7 @@ function onListening() {
     const addr = server.address();
     const bind = typeof addr === "string" ? `pipe ${addr}` : `port ${addr.port}`;
     if (process.env.NODE_ENV === devEnv) {
-        debug("Listening on " + bind);
+        debug(`Listening on ${  bind}`);
     }
 }
 
