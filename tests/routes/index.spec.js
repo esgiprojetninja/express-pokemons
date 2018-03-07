@@ -19,6 +19,17 @@ describe('GET /', () => {
             });
     });
 
+    it('should provoke 404', done => {
+        chai.request(server)
+            .get('/uhoh')
+            .end((err, res) => {
+                expect(err).not.toBeNull();
+                expect(res.status).toBe(404);
+                expect(res.ok).toBe(false);
+                done();
+            });
+    });
+
     afterAll(async () => {
         await server.close();
     })
