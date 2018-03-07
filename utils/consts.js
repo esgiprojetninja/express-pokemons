@@ -1,5 +1,6 @@
 module.exports = {
     prod: "production",
     devEnv: "development",
-    testEnv: "test"
+    testEnv: "test",
+    defaultTestPort: "3156"
 };
