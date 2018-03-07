@@ -62,5 +62,14 @@ module.exports = {
             _createCollection();
             seed();
         });
+    },
+    async getAll() {
+        try {
+            const pokemons = await COLLECTION.find({});
+            const mappedPokemons = pokemons.map(pokemon => pokemon.toJSON());
+            return mappedPokemons;
+        } catch(e) {
+            return [];
+        }
     }
 };

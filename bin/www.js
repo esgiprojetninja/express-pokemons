@@ -15,7 +15,6 @@ const server = app.listen(app.get("port"), () => {
 });
 server.on("error", onError);
 server.on("listening", onListening);
-
 /**
 * Normalize a port into a number, string, or false.
 */
@@ -73,3 +72,5 @@ function onListening() {
         debug("Listening on " + bind);
     }
 }
+
+module.exports = server;

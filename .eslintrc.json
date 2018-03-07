@@ -3,7 +3,7 @@
         "es6": true,
         "node": true
     },
-    "extends": ["plugin:prettier/recommended"],
+    "extends": ["prettier"],
     "rules": {
         "indent": [
             "error",
