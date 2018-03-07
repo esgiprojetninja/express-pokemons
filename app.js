@@ -1,51 +1,39 @@
-require('dotenv').config({ path: './.env.local' });
-const Koa = require('koa');
-const Router = require('koa-router');
-const Logger = require('koa-logger');
-const Cors = require('koa-cors');
-const Helmet = require('koa-helmet');
-const BodyParser = require('koa-bodyparser');
-const Respond = require('koa-respond');
-const Database = require('./db');
-const globals = require('./utils/consts');
+require("dotenv").config({ path: "./.env.local" });
+const express = require("express");
+const logger = require("morgan");
+const bodyParser = require("body-parser");
+const DataBase = require("./db");
+const { devEnv } = require("./utils/consts");
 
-const app = new Koa();
-const router = new Router();
+const app = express();
+DataBase.connect();
 
-// Security middlewares
-app.use(Helmet());
-app.use(Cors({
-    origin: true,
-    'Access-Control-Allow-Methods': ['GET', 'PUT', 'POST', 'DELETE'],
-    'Access-Control-Allow-Headers': ['Content-Type', 'Authorization']
-}));
-
-Database.connect();
-
-// Parser middleware
-app.use(BodyParser({
-    enableTypes: ['json'],
-    jsonLimit: '5mb',
-    strict: true,
-    onerror(err, ctx) {
-        ctx.throw('Body parse error', 422, { err });
-    }
-}));
-
-if (process.env.NODE_ENV === globals.devEnv) {
-    app.use(Logger());
+if ( process.env.NODE_ENV === devEnv ) {
+    app.use(logger("dev"));
 }
 
-// Response middleware
-app.use(Respond());
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
 
-// API routes
-require('./routes')(router);
-app.use(router.routes());
-app.use(router.allowedMethods());
+app.use("/", require("./routes/index"));
+app.use("/pokemons", require("./routes/pokemons"));
 
-const server = app.listen(process.env.PORT || 3000);
+// catch 404 and forward to error handler
+app.use(function(req, res, next) {
+    const err = new Error("Not Found");
+    err.status = 404;
+    next(err);
+});
 
-exports.module = {
-    server
-};
+// error handler
+app.use(function(err, req, res) {
+    // set locals, only providing error in development
+    res.locals.message = err.message;
+    res.locals.error = process.env.NODE_ENV === devEnv ? err : {};
+    
+    // render the error page
+    res.status(err.status || 500);
+    res.render("error");
+});
+
+module.exports = app;

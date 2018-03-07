@@ -1,7 +1,7 @@
-require('dotenv').config({ path: './.env.local' });
-const mongoose = require('mongoose');
-const globals = require('../utils/consts');
-const todos = require('./schema/todo');
+require("dotenv").config({ path: "./.env.local" });
+const mongoose = require("mongoose");
+const globals = require("../utils/consts");
+const pokemon = require("./schema/pokemon");
 
 const isConnectionEstablished = () => mongoose.connection && mongoose.connection.host && mongoose.connection.port;
 
@@ -12,11 +12,11 @@ const connect = () => {
     });
     const db = mongoose.connection;
 
-    db.on('error', console.error.bind(console, 'DB Connection error:: '));
-    db.once('open', () => {
-        console.log('Mongoose connected !');
+    db.on("error", console.error.bind(console, "DB Connection error:: "));
+    db.once("open", () => {
+        console.warn("Mongoose connected !");
         if (process.env.NODE_ENV === globals.devEnv) {
-            todos.reset();
+            pokemon.reset();
         }
     });
 };

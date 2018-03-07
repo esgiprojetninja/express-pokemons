@@ -1,3 +1,3 @@
 module.exports = {
-    devEnv: 'dev'
+    devEnv: "development"
 };

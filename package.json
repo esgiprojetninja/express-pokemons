@@ -1,50 +1,24 @@
 {
-  "name": "koa-todos",
-  "version": "1.0.0",
-  "description": "basic todos management with koa framework",
-  "main": "app.js",
+  "name": "koa-pokemon",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "jest --notify --config=tests/jest.config.json",
-    "serve": "nodemon app.js"
+    "start": "node ./bin/www",
+    "serve": "nodemon ./bin/www"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/dydyFos/koa-todos.git"
-  },
-  "keywords": [
-    "koa",
-    "nodejs",
-    "js"
-  ],
-  "author": "dydyFos",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/dydyFos/koa-todos/issues"
-  },
-  "homepage": "https://github.com/dydyFos/koa-todos#readme",
+  "main": "./bin/www",
   "dependencies": {
+    "body-parser": "~1.18.2",
+    "debug": "~2.6.9",
     "dotenv": "^5.0.1",
-    "koa": "^2.5.0",
-    "koa-bodyparser": "^4.2.0",
-    "koa-cors": "0.0.16",
-    "koa-helmet": "^3.3.0",
-    "koa-logger": "^3.1.0",
-    "koa-respond": "^1.0.1",
-    "koa-router": "^7.4.0",
-    "mongoose": "^5.0.7"
+    "express": "~4.15.5",
+    "mongoose": "^5.0.9",
+    "morgan": "~1.9.0",
+    "serve-favicon": "~2.4.5"
   },
   "devDependencies": {
-    "chai": "^4.1.2",
-    "chai-http": "^3.0.0",
-    "eslint": "^4.18.1",
-    "eslint-config-koa": "^2.0.2",
-    "eslint-config-standard": "^11.0.0",
-    "eslint-plugin-import": "^2.9.0",
-    "eslint-plugin-jest": "^21.13.0",
-    "eslint-plugin-node": "^6.0.1",
-    "eslint-plugin-promise": "^3.6.0",
-    "eslint-plugin-standard": "^3.0.1",
-    "jest": "^22.4.2",
-    "nodemon": "^1.17.1"
+    "eslint-plugin-prettier": "^2.6.0",
+    "nodemon": "^1.17.1",
+    "prettier": "^1.11.1"
   }
 }
