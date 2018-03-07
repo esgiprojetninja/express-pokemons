@@ -1,11 +1,11 @@
 # Koa Todos API
 
-Based on https://github.com/dbalas/koalerplate
+Based on http://expressjs.com
 
 # Launch dev project
     - node > 8
     - docker
-    - ```sh
+    ```sh
         docker pull mongo
         docker run --name koa-todos-db -d mongo
     ```
@@ -14,15 +14,15 @@ Based on https://github.com/dbalas/koalerplate
         docker inspect koa-todos-db
     ```
 
-    - ```sh
+    ```sh
         npm install
         npm run serve
     ```
 
 ## Requirements 
     -- unit tests
-    -- swagger (https://www.npmjs.com/package/swagger-koa)
-    -- front
+    -- swagger (https://www.npmjs.com/package/swagger-node-express)
+    -- front (https://github.com/esgiprojetninja/ninjaPokedex/tree/master/public/js)
     -- websocket || server push
     -- CI
 
@@ -31,5 +31,4 @@ Based on https://github.com/dbalas/koalerplate
     - http://mongoosejs.com/docs/guide.html
     - https://docs.mongodb.com/manual/reference/sql-comparison/#examples
     - https://facebook.github.io/jest/docs/en/getting-started.html
-    - https://github.com/howardabrams/node-mocks-http
     - https://hub.docker.com/_/mongo/
