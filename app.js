@@ -44,4 +44,8 @@ require('./routes')(router);
 app.use(router.routes());
 app.use(router.allowedMethods());
 
-app.listen(process.env.PORT || 3000);
+const server = app.listen(process.env.PORT || 3000);
+
+exports.module = {
+    server
+};

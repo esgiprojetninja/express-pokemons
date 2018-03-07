@@ -1,0 +1,5 @@
+{
+    "name": "koa-todos",
+    "verbose": true,
+    "browser": false
+}
