@@ -1,11 +1,12 @@
+require("dotenv").config({ path: "./.env.local" });
 const chai = require('chai');
 const chaiHttp = require('chai-http');
 chai.use(chaiHttp);
-
+process.env.PORT = process.env.TEST_PORT;
 const server = require('../../bin/www');
 
 describe('GET /pokemons', () => {
-    it('should return array', done => {        
+    it('should return array', done => {
         chai.request(server)
             .get('/pokemons')
             .end((err, res) => {

@@ -1,3 +1,5 @@
 module.exports = {
-    devEnv: "development"
+    prod: "production",
+    devEnv: "development",
+    testEnv: "test"
 };
