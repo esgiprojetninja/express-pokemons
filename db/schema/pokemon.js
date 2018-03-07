@@ -58,12 +58,18 @@ const seed = () => {
 
 module.exports = {
     reset() {
+        if ( process.env.NODE_ENV === require("../../utils/consts").testEnv) {
+            return;
+        }
         _emptyCollection(() => {
             _createCollection();
             seed();
         });
     },
     async getAll() {
+        if ( process.env.NODE_ENV === require("../../utils/consts").testEnv) {
+            return [];
+        }
         try {
             const pokemons = await COLLECTION.find({});
             const mappedPokemons = pokemons.map(pokemon => pokemon.toJSON());

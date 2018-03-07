@@ -6,6 +6,9 @@ const pokemon = require("./schema/pokemon");
 const isConnectionEstablished = () => mongoose.connection && mongoose.connection.host && mongoose.connection.port;
 
 const connect = () => {
+    if ( process.env.NODE_ENV === require("../utils/consts").testEnv) {
+        return;
+    }
     if (isConnectionEstablished()) return;
     mongoose.connect(`mongodb:${process.env.DB_PATH}`, {
         autoReconnect: true

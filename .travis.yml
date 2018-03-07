@@ -7,6 +7,10 @@ before_install:
 - sudo apt-get -qq update
 - sudo apt-get install -y libxml2-dev
 - npm install -g eslint
+- npm install -g babel-eslint
+- npm install -g prettier
+- npm install -g eslint-config-prettier
+- npm install -g eslint-plugin-prettier
 - npm install -g codecov
 - docker pull mongo
 - docker run --name $DB_CONTAINER -d mongo
