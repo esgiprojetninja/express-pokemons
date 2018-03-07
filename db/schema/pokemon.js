@@ -7,27 +7,27 @@ let COLLECTION = null;
 const _emptyCollection = callback => {
     const name = `${COLLECTION_NAME.toLowerCase()}s`;
     mongoose.connection.db.listCollections({ name })
-    .next((err, collinfo) => {
-        if (err) {
-            console.error(`Failed to delete ${COLLECTION_NAME} model`, err);
-            return;
-        }
-        if (collinfo) {
-            mongoose.connection.db.dropCollection(name, (err) => { 
-                if (err) {
-                    console.error(`Failed to delete ${COLLECTION_NAME} model`, err);
-                    return;
-                }
-                console.warn(`Removed ${COLLECTION_NAME} Collection`);
-                if (callback && typeof callback === "function") {
-                    callback();
-                }
+        .next((err, collinfo) => {
+            if (err) {
+                console.error(`Failed to delete ${COLLECTION_NAME} model`, err);
                 return;
-            });
-        } else {
-            callback();
-        }
-    });
+            }
+            if (collinfo) {
+                mongoose.connection.db.dropCollection(name, (err) => { 
+                    if (err) {
+                        console.error(`Failed to delete ${COLLECTION_NAME} model`, err);
+                        return;
+                    }
+                    console.warn(`Removed ${COLLECTION_NAME} Collection`);
+                    if (callback && typeof callback === "function") {
+                        callback();
+                    }
+                    return;
+                });
+            } else {
+                callback();
+            }
+        });
     
 };
 
@@ -62,5 +62,14 @@ module.exports = {
             _createCollection();
             seed();
         });
+    },
+    async getAll() {
+        try {
+            const pokemons = await COLLECTION.find({});
+            const mappedPokemons = pokemons.map(pokemon => pokemon.toJSON());
+            return mappedPokemons;
+        } catch(e) {
+            return [];
+        }
     }
 };

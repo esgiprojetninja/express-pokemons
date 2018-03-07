@@ -1,0 +1,5 @@
+{
+    "name": "express-pokemon",
+    "verbose": true,
+    "browser": false
+}
