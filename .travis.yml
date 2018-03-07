@@ -8,6 +8,14 @@ before_install:
 - sudo apt-get install -y libxml2-dev
 - npm install -g eslint
 - npm install -g codecov
+- docker pull mongo
+- docker run --name $DB_CONTAINER -d mongo
+- touch .env.local
+    - echo "PORT=3000" >> .env.local
+    - echo "TEST_PORT=3156" >> .env.local
+    - echo "NODE_ENV=development" >> .env.local
+    - containerIP=`sudo docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' $DB_CONTAINER`
+    - echo "DB_PATH=//$containerIP:27017/mongo" >> .env.local
 script:
 - npm run testrun
 - npm run codecov
