@@ -1,0 +1,39 @@
+language: node_js
+node_js:
+- '8'
+services:
+- docker
+before_install:
+- sudo apt-get -qq update
+- sudo apt-get install -y libxml2-dev
+- npm install -g eslint
+- npm install -g codecov
+script:
+- npm run testrun
+- npm run codecov
+- npm run eslint
+deploy:
+  provider: heroku
+  api_key:
+    secure: SIB9lChrMb4nQ8ZA8f++lwBAaQssLALsaPUvuH9W79Y48keCmaJpUkQ1CUMviY8w38+NMfVJTWgbEcytvosZLjh1lIDZDisZiuOyqSG23+fV+CpeVLaLMVF2mRT6wpJ/uWcfrgQuAd03jjW0W7/H0jSiiL4hFDAsyqNNWZzga8BZDdM2g3usiKA2DncdGOeLKqm8kX/wljEeDsXlqWCAmA8kovgU03pDtcXeOkveEIaH2iOGNp1QrzVdMY6i7XPHDa4KzLiMHeViG5iambMQFwDLP4/XilEZj2T5RM64PFUq60RBeNwXqrCT7tm1Nq2MGBXPD7h/1uEgySjNyyy8/ZBgFuQvG363HVIK0DhpC8XkZG2yuqSiNoOUMLHID09S1k1f9L8L3B/alRV23l7VYRgCiCb184/nXneTpoDRv2+/EiSYlJ0h/ifbFDUBAMPVLsuvUoVhelNq75C07G5g1XWaUdvpBOuklPX/fqcA4+CS4YkkNPJOCDIg1/tWUU/lFeLWiGEt7Q+pJ0GOQKPDaXvLEx1bv8NCkw84JAksBIXjkRV1Huov8VGLSoD7ExwrNNcJbtLfWHtEYGFhsejr/iRHI7ArVYrYTZgk1NsHYMN4/9fOk3mTrk4CRhTnLZ924FrD2kDyfQ/O3vJmL33J/9Fv09TkRE/aqBgyrqIB7+Y=
+  app: express-pokemons
+  on:
+    repo: esgiprojetninja/express-pokemons
+    branch: master
+    run:
+    - docker pull mongo
+    - docker run --name $DB_CONTAINER -d mongo
+    - touch .env.local
+    - echo "PORT=3000" >> .env.local
+    - echo "NODE_ENV=production" >> .env.local
+    - containerIP=`sudo docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' $DB_CONTAINER`
+    - echo "DB_PATH=//$containerIP:27017/mongo" >> .env.local
+    - npm start
+    - rm -rf .git
+    - rm .gitignore
+    - rm package.json
+    - rm package-lock.json
+    - rm .env.sample
+    - rm .eslintrc.json
+    - readme.md
+    - rm -rf tests
