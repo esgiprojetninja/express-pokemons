@@ -3,3 +3,5 @@ node_modules/
 
 # mongodb storage
 bd/storage/
+
+tests/coverage
