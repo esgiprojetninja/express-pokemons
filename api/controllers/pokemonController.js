@@ -1,6 +1,6 @@
-let mongoose = require("mongoose"),
-    Pokemon = require("../models/Pokemon"),
-    Location = require("../models/Location");
+const mongoose = require("mongoose");
+const Pokemon = require("../models/Pokemon");
+const Location = require("../models/Location");
 attributesSelect = "id_pokemon description name id_parent image id_national type1 type2";
 
 /** list pokemons **/
@@ -11,7 +11,7 @@ exports.list_all_pokemons = async function(req, res) {
         return res.json(pokemons);
     } catch (error) {
         return res.status(500).send(error);
-    }    
+    }
 };
 
 /** display pokemon **/
@@ -22,18 +22,18 @@ exports.read_pokemon = async function(req, res) {
         return res.json(pokemons);
     } catch (error) {
         return res.status(500).send(error);
-    }    
+    }
 };
 
 /** create pokemon **/
 exports.create_pokemon = async function(req, res) {
     try {
         let new_pokemon = new Pokemon(req.body);
-        const pokemons = await new_pokemon.save();
-        return res.json(pokemons);
+        const pokemon = await new_pokemon.save();
+        return res.json(pokemon);
     } catch (error) {
         return res.status(500).send(error);
-    }  
+    }
 };
 
 /** update pokemon **/
@@ -44,7 +44,7 @@ exports.update_pokemon = async function(req, res) {
         return res.json(pokemons);
     } catch (error) {
         return res.status(500).send(error);
-    } 
+    }
 };
 
 /** delete pokemon **/
@@ -52,10 +52,10 @@ exports.delete_pokemon = async function(req, res) {
     try {
         let query = Pokemon.remove({ id_national: req.params.Id });
         const pokemons = await query.exec();
-        return res.json(pokemons);
+        return res.json(true);
     } catch (error) {
         return res.status(500).send(error);
-    } 
+    }
 };
 
 /** add a location **/
@@ -66,5 +66,5 @@ exports.set_location = async function(req, res) {
         return res.json(location);
     } catch (error) {
         return res.status(500).send(error);
-    }  
+    }
 };
