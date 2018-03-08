@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 
-let pokemon = require("../controllers/pokemonController");
+const pokemon = require("../controllers/pokemonController");
 
 /**
  * @swagger
