@@ -1,0 +1,1512 @@
+[
+  {
+    "id_pokemon": 1,
+    "id_national": 1,
+    "description": "Bulbizarre passe son temps à faire la sieste sous le soleil. Il y a une graine sur son dos. Il absorbe les rayons du soleil pour faire doucement pousser la graine.",
+    "id_parent": null,
+    "image": "http://romainlambot.fr/pokemons/images/1.png",
+    "name": "Bulbizarre",
+    "type1": 11,
+    "type2": 12
+  },
+  {
+    "id_pokemon": 2,
+    "id_national": 2,
+    "description": "Un bourgeon a poussé sur le dos de ce Pokémon. Pour en supporter le poids, Herbizarre a dû se muscler les pattes. Lorsqu'il commence à se prélasser au soleil, ça signifie que son bourgeon va éclore, donnant naissance à une fleur.",
+    "id_parent": 0,
+    "image": "http://romainlambot.fr/pokemons/images/2.png",
+    "name": "Herbizarre",
+    "type1": 11,
+    "type2": 12
+  },
+  {
+    "id_pokemon": 3,
+    "id_national": 3,
+    "description": "Une belle fleur se trouve sur le dos de Florizarre. Elle prend une couleur vive lorsqu'elle est bien nourrie et bien ensoleillée. Le parfum de cette fleur peut apaiser les gens.",
+    "id_parent": 2,
+    "image": "http://romainlambot.fr/pokemons/images/3.png",
+    "name": "Florizarre",
+    "type1": 11,
+    "type2": 12
+  },
+  {
+    "id_pokemon": 4,
+    "id_national": 4,
+    "description": "La flamme qui brûle au bout de sa queue indique l'humeur de ce Pokémon. Elle vacille lorsque Salamèche est content. En revanche, lorsqu'il s'énerve, la flamme prend de l'importance et brûle plus ardemment.",
+    "id_parent": null,
+    "image": "http://romainlambot.fr/pokemons/images/4.png",
+    "name": "Salamèche",
+    "type1": 7,
+    "type2": null
+  },
+  {
+    "id_pokemon": 5,
+    "id_national": 5,
+    "description": "Reptincel lacère ses ennemis sans pitié grâce à ses griffes acérées. S'il rencontre un ennemi puissant, il devient agressif et la flamme au bout de sa queue s'embrase et prend une couleur bleu clair.",
+    "id_parent": 4,
+    "image": "http://romainlambot.fr/pokemons/images/5.png",
+    "name": "Reptincel",
+    "type1": 7,
+    "type2": null
+  },
+  {
+    "id_pokemon": 6,
+    "id_national": 6,
+    "description": "Dracaufeu parcourt les cieux pour trouver des adversaires à sa mesure. Il crache de puissantes flammes capables de faire fondre n'importe quoi. Mais il ne dirige jamais son souffle destructeur vers un ennemi plus faible.",
+    "id_parent": 5,
+    "image": "http://romainlambot.fr/pokemons/images/6.png",
+    "name": "Dracaufeu",
+    "type1": 7,
+    "type2": 18
+  },
+  {
+    "id_pokemon": 7,
+    "id_national": 7,
+    "description": "La carapace de Carapuce ne sert pas qu'à le protéger. La forme ronde de sa carapace et ses rainures lui permettent d'améliorer son hydrodynamisme. Ce Pokémon nage extrêmement vite.",
+    "id_parent": null,
+    "image": "http://romainlambot.fr/pokemons/images/7.png",
+    "name": "Carapuce",
+    "type1": 4,
+    "type2": null
+  },
+  {
+    "id_pokemon": 8,
+    "id_national": 8,
+    "description": "Carabaffe a une large queue recouverte d'une épaisse fourrure. Elle devient de plus en plus foncée avec l'âge. Les éraflures sur la carapace de ce Pokémon témoignent de son expérience au combat.",
+    "id_parent": 7,
+    "image": "http://romainlambot.fr/pokemons/images/8.png",
+    "name": "Carabaffe",
+    "type1": 4,
+    "type2": null
+  },
+  {
+    "id_pokemon": 9,
+    "id_national": 9,
+    "description": "Tortank dispose de canons à eau émergeant de sa carapace. Ils sont très précis et peuvent envoyer des balles d'eau capables de faire mouche sur une cible située à plus de 50 m.",
+    "id_parent": 8,
+    "image": "http://romainlambot.fr/pokemons/images/9.png",
+    "name": "Tortank",
+    "type1": 4,
+    "type2": null
+  },
+  {
+    "id_pokemon": 10,
+    "id_national": 10,
+    "description": "Chenipan a un appétit d'ogre. Il peut engloutir des feuilles plus grosses que lui. Les antennes de ce Pokémon dégagent une odeur particulièrement entêtante.",
+    "id_parent": null,
+    "image": "http://romainlambot.fr/pokemons/images/10.png",
+    "name": "Chenipan",
+    "type1": 9,
+    "type2": null
+  },
+  {
+    "id_pokemon": 11,
+    "id_national": 11,
+    "description": "La carapace protégeant ce Pokémon est dure comme du métal. Chrysacier ne bouge pas beaucoup. Il reste immobile pour préparer les organes à l'intérieur de sa carapace en vue d'une évolution future.",
+    "id_parent": 10,
+    "image": "http://romainlambot.fr/pokemons/images/11.png",
+    "name": "Chrysacier",
+    "type1": 9,
+    "type2": null
+  },
+  {
+    "id_pokemon": 12,
+    "id_national": 12,
+    "description": "Papilusion est très doué pour repérer le délicieux nectar qu'il butine dans les fleurs. Il peut détecter, extraire et transporter le nectar de fleurs situées à plus de 10 km de son nid.",
+    "id_parent": 11,
+    "image": "http://romainlambot.fr/pokemons/images/12.png",
+    "name": "Papilusion",
+    "type1": 9,
+    "type2": 18
+  },
+  {
+    "id_pokemon": 13,
+    "id_national": 13,
+    "description": "L'odorat d'Aspicot est extrêmement développé. Il lui suffit de renifler ses feuilles préférées avec son gros appendice nasal pour les reconnaître entre mille.",
+    "id_parent": null,
+    "image": "http://romainlambot.fr/pokemons/images/13.png",
+    "name": "Aspicot",
+    "type1": 9,
+    "type2": 12
+  },
+  {
+    "id_pokemon": 14,
+    "id_national": 14,
+    "description": "Coconfort est la plupart du temps immobile et reste accroché à un arbre. Cependant, intérieurement, il est très actif, car il se prépare pour sa prochaine évolution. En touchant sa carapace, on peut sentir sa chaleur.",
+    "id_parent": 13,
+    "image": "http://romainlambot.fr/pokemons/images/14.png",
+    "name": "Coconfort",
+    "type1": 9,
+    "type2": 12
+  },
+  {
+    "id_pokemon": 15,
+    "id_national": 15,
+    "description": "Dardargnan est extrêmement possessif. Il vaut mieux ne pas toucher son nid si on veut éviter d'avoir des ennuis. Lorsqu'ils sont en colère, ces Pokémon attaquent en masse.",
+    "id_parent": 14,
+    "image": "http://romainlambot.fr/pokemons/images/15.png",
+    "name": "Dardargnan",
+    "type1": 9,
+    "type2": 12
+  },
+  {
+    "id_pokemon": 16,
+    "id_national": 16,
+    "description": "Roucool a un excellent sens de l'orientation. Il est capable de retrouver son nid sans jamais se tromper, même s'il est très loin de chez lui et dans un environnement qu'il ne connaît pas.",
+    "id_parent": null,
+    "image": "http://romainlambot.fr/pokemons/images/16.png",
+    "name": "Roucool",
+    "type1": 10,
+    "type2": 18
+  },
+  {
+    "id_pokemon": 17,
+    "id_national": 17,
+    "description": "Roucoups utilise une vaste surface pour son territoire. Ce Pokémon surveille régulièrement son espace aérien. Si quelqu'un pénètre sur son territoire, il corrige l'ennemi sans pitié d'un coup de ses terribles serres.",
+    "id_parent": 16,
+    "image": "http://romainlambot.fr/pokemons/images/17.png",
+    "name": "Roucoups",
+    "type1": 10,
+    "type2": 18
+  },
+  {
+    "id_pokemon": 18,
+    "id_national": 18,
+    "description": "Ce Pokémon est doté d'un plumage magnifique et luisant. Bien des Dresseurs sont captivés par la beauté fatale de sa huppe et décident de choisir Roucarnage comme leur Pokémon favori.",
+    "id_parent": 17,
+    "image": "http://romainlambot.fr/pokemons/images/18.png",
+    "name": "Roucarnage",
+    "type1": 10,
+    "type2": 18
+  },
+  {
+    "id_pokemon": 19,
+    "id_national": 19,
+    "description": "Rattata est extrêmement prudent. Même lorsqu'il est endormi, il fait pivoter ses oreilles pour écouter autour de lui. En ce qui concerne son habitat, il n'est vraiment pas difficile. Il peut faire son nid n'importe où.",
+    "id_parent": null,
+    "image": "http://romainlambot.fr/pokemons/images/19.png",
+    "name": "Rattata",
+    "type1": 10,
+    "type2": 17
+  },
+  {
+    "id_pokemon": 20,
+    "id_national": 20,
+    "description": "Les crocs robustes de Rattatac poussent constamment. Pour éviter qu'ils raclent le sol, il se fait les dents sur des cailloux ou des troncs d'arbre. Il lui arrive même de ronger les murs des maisons.",
+    "id_parent": 19,
+    "image": "http://romainlambot.fr/pokemons/images/20.png",
+    "name": "Rattatac",
+    "type1": 10,
+    "type2": 17
+  },
+  {
+    "id_pokemon": 21,
+    "id_national": 21,
+    "description": "Piafabec crie tellement fort qu'il peut être entendu à 1 km de distance. Ces Pokémon se préviennent d'un danger en entonnant une mélopée très aiguë, qu'ils se renvoient les uns les autres, comme un écho.",
+    "id_parent": null,
+    "image": "http://romainlambot.fr/pokemons/images/21.png",
+    "name": "Piafabec",
+    "type1": 10,
+    "type2": 18
+  },
+  {
+    "id_pokemon": 22,
+    "id_national": 22,
+    "description": "On reconnaît un Rapasdepic à son long cou et à son bec allongé. Ces attributs lui permettent d'attraper facilement ses proies dans la terre ou dans l'eau. Il bouge son bec long et fin avec une grande agilité.",
+    "id_parent": 21,
+    "image": "http://romainlambot.fr/pokemons/images/22.png",
+    "name": "Rapasdepic",
+    "type1": 10,
+    "type2": 18
+  },
+  {
+    "id_pokemon": 23,
+    "id_national": 23,
+    "description": "Abo s'enroule en spirale pour dormir. Sa tête reste relevée de telle sorte que cette position lui permette de réagir rapidement si une menace survenait.",
+    "id_parent": null,
+    "image": "http://romainlambot.fr/pokemons/images/23.png",
+    "name": "Abo",
+    "type1": 12,
+    "type2": null
+  },
+  {
+    "id_pokemon": 24,
+    "id_national": 24,
+    "description": "Ce Pokémon doté d'une force extraordinaire peut étrangler ses proies avec son corps. Il peut même écraser des tonneaux métalliques. Une fois sous l'étreinte d'Arbok, il est impossible de lui échapper.",
+    "id_parent": 23,
+    "image": "http://romainlambot.fr/pokemons/images/24.png",
+    "name": "Arbok",
+    "type1": 12,
+    "type2": null
+  },
+  {
+    "id_pokemon": 25,
+    "id_national": 25,
+    "description": "Ce Pokémon dispose de petites poches dans les joues pour stocker de l'électricité. Elles semblent se charger pendant que Pikachu dort. Il libère parfois un peu d'électricité lorsqu'il n'est pas encore bien réveillé.",
+    "id_parent": null,
+    "image": "http://romainlambot.fr/pokemons/images/25.png",
+    "name": "Pikachu",
+    "type1": 5,
+    "type2": null
+  },
+  {
+    "id_pokemon": 26,
+    "id_national": 26,
+    "description": "Ce Pokémon libère un faible champ électrique tout autour de son corps, ce qui le rend légèrement lumineux dans le noir. Raichu plante sa queue dans le sol pour évacuer de l'électricité.",
+    "id_parent": 25,
+    "image": "http://romainlambot.fr/pokemons/images/26.png",
+    "name": "Raichu",
+    "type1": 5,
+    "type2": null
+  },
+  {
+    "id_pokemon": 27,
+    "id_national": 27,
+    "description": "Sabelette a une peau très sèche et extrêmement dure. Ce Pokémon peut s'enrouler sur lui-même pour repousser les attaques. La nuit, il s'enterre dans le sable du désert pour dormir.",
+    "id_parent": null,
+    "image": "http://romainlambot.fr/pokemons/images/27.png",
+    "name": "Sabelette",
+    "type1": 15,
+    "type2": 8
+  },
+  {
+    "id_pokemon": 28,
+    "id_national": 28,
+    "description": "Sablaireau peut enrouler son corps pour prendre la forme d'une balle hérissée de pointes. Ce Pokémon essaie de faire peur à son ennemi en le frappant avec ses pointes. Puis, il se rue sur lui avec ses griffes acérées.",
+    "id_parent": 27,
+    "image": "http://romainlambot.fr/pokemons/images/28.png",
+    "name": "Sablaireau",
+    "type1": 15,
+    "type2": 8
+  },
+  {
+    "id_pokemon": 29,
+    "id_national": 29,
+    "description": "Nidoran femelle est couvert de pointes qui sécrètent un poison puissant. On pense que ce petit Pokémon a développé ces pointes pour se défendre. Lorsqu'il est en colère, une horrible toxine sort de sa corne.",
+    "id_parent": null,
+    "image": "http://romainlambot.fr/pokemons/images/29.png",
+    "name": "Nidoran femelle",
+    "type1": 12,
+    "type2": null
+  },
+  {
+    "id_pokemon": 30,
+    "id_national": 30,
+    "description": "Lorsqu'un Nidorina est avec ses amis ou sa famille, il replie ses pointes pour ne pas blesser ses proches. Ce Pokémon devient vite nerveux lorsqu'il est séparé de son groupe.",
+    "id_parent": 29,
+    "image": "http://romainlambot.fr/pokemons/images/30.png",
+    "name": "Nidorina",
+    "type1": 12,
+    "type2": null
+  },
+  {
+    "id_pokemon": 31,
+    "id_national": 31,
+    "description": "Le corps de Nidoqueen est protégé par des écailles extrêmement dures. Il aime envoyer ses ennemis voler en leur fonçant dessus. Ce Pokémon utilise toute sa puissance lorsqu'il protège ses petits.",
+    "id_parent": 30,
+    "image": "http://romainlambot.fr/pokemons/images/31.png",
+    "name": "Nidoqueen",
+    "type1": 12,
+    "type2": 15
+  },
+  {
+    "id_pokemon": 32,
+    "id_national": 32,
+    "description": "Nidoran mâle a développé des muscles pour bouger ses oreilles. Ainsi, il peut les orienter à sa guise. Ce Pokémon peut entendre le plus discret des bruits.",
+    "id_parent": null,
+    "image": "http://romainlambot.fr/pokemons/images/32.png",
+    "name": "Nidoran mâle",
+    "type1": 12,
+    "type2": null
+  },
+  {
+    "id_pokemon": 33,
+    "id_national": 33,
+    "description": "Nidorino dispose d'une corne plus dure que du diamant. S'il sent une présence hostile, toutes les pointes de son dos se hérissent d'un coup, puis il défie son ennemi.",
+    "id_parent": 32,
+    "image": "http://romainlambot.fr/pokemons/images/33.png",
+    "name": "Nidorino",
+    "type1": 12,
+    "type2": null
+  },
+  {
+    "id_pokemon": 34,
+    "id_national": 34,
+    "description": "L'épaisse queue de Nidoking est d'une puissance incroyable. En un seul coup, il peut renverser une tour métallique. Lorsque ce Pokémon se déchaîne, plus rien ne peut l'arrêter.",
+    "id_parent": 33,
+    "image": "http://romainlambot.fr/pokemons/images/34.png",
+    "name": "Nidoking",
+    "type1": 12,
+    "type2": 15
+  },
+  {
+    "id_pokemon": 35,
+    "id_national": 35,
+    "description": "Les nuits de pleine lune, des groupes de ces Pokémon sortent jouer. Lorsque l'aube commence à poindre, les Mélofée fatigués rentrent dans leur retraite montagneuse et vont dormir, blottis les uns contre les autres.",
+    "id_parent": null,
+    "image": "http://romainlambot.fr/pokemons/images/35.png",
+    "name": "Mélofée",
+    "type1": 6,
+    "type2": null
+  },
+  {
+    "id_pokemon": 36,
+    "id_national": 36,
+    "description": "Les Mélodelfe se déplacent en sautant doucement, comme s'ils volaient. Leur démarche légère leur permet même de marcher sur l'eau. On raconte qu'ils se promènent sur les lacs, les soirs où la lune est claire.",
+    "id_parent": 35,
+    "image": "http://romainlambot.fr/pokemons/images/36.png",
+    "name": "Mélodelfe",
+    "type1": 6,
+    "type2": null
+  },
+  {
+    "id_pokemon": 37,
+    "id_national": 37,
+    "description": "À l'intérieur du corps de Goupix se trouve une flamme qui ne s'éteint jamais. Pendant la journée, lorsque la température augmente, ce Pokémon crache des flammes pour éviter que son corps ne devienne trop chaud.",
+    "id_parent": null,
+    "image": "http://romainlambot.fr/pokemons/images/37.png",
+    "name": "Goupix",
+    "type1": 7,
+    "type2": 8
+  },
+  {
+    "id_pokemon": 38,
+    "id_national": 38,
+    "description": "La légende raconte que Feunard est apparu lorsque neuf sorciers aux pouvoirs sacrés décidèrent de fusionner. Ce Pokémon est très intelligent. Il comprend la langue des hommes.",
+    "id_parent": 37,
+    "image": "http://romainlambot.fr/pokemons/images/38.png",
+    "name": "Feunard",
+    "type1": 7,
+    "type2": 8
+  },
+  {
+    "id_pokemon": 39,
+    "id_national": 39,
+    "description": "Lorsque ce Pokémon chante, il ne s'arrête pas pour respirer. Quand il se bat contre un adversaire qu'il ne peut pas facilement endormir, Rondoudou reste donc sans respirer, mettant sa vie en danger.",
+    "id_parent": null,
+    "image": "http://romainlambot.fr/pokemons/images/39.png",
+    "name": "Rondoudou",
+    "type1": 10,
+    "type2": 6
+  },
+  {
+    "id_pokemon": 40,
+    "id_national": 40,
+    "description": "Le corps de Grodoudou est très élastique. S'il inspire profondément, ce Pokémon peut se gonfler à volonté. Une fois gonflé, Grodoudou peut rebondir comme un ballon.",
+    "id_parent": 39,
+    "image": "http://romainlambot.fr/pokemons/images/40.png",
+    "name": "Grodoudou",
+    "type1": 10,
+    "type2": 6
+  },
+  {
+    "id_pokemon": 41,
+    "id_national": 41,
+    "description": "Nosferapti évite la lumière du soleil, car ça le rend malade. Pendant la journée, il reste dans les cavernes ou à l'ombre des vieilles maisons, où il dort, la tête à l'envers.",
+    "id_parent": null,
+    "image": "http://romainlambot.fr/pokemons/images/41.png",
+    "name": "Nosferapti",
+    "type1": 12,
+    "type2": 18
+  },
+  {
+    "id_pokemon": 42,
+    "id_national": 42,
+    "description": "Nosferalto mord sa proie grâce à ses quatre crocs pour boire son sang. Il ne sort que lorsque la nuit est noire et sans lune, pour voleter en quête de gens et de Pokémon à mordre.",
+    "id_parent": 41,
+    "image": "http://romainlambot.fr/pokemons/images/42.png",
+    "name": "Nosferalto",
+    "type1": 12,
+    "type2": 18
+  },
+  {
+    "id_pokemon": 43,
+    "id_national": 43,
+    "description": "Mystherbe cherche un sol fertile et riche en nutriments, pour s'y planter. Pendant la journée, quand il est planté, les pieds de ce Pokémon changent de forme et deviennent similaires à des racines.",
+    "id_parent": null,
+    "image": "http://romainlambot.fr/pokemons/images/43.png",
+    "name": "Mystherbe",
+    "type1": 11,
+    "type2": 12
+  },
+  {
+    "id_pokemon": 44,
+    "id_national": 44,
+    "description": "Ortide bave un miel qui sent horriblement mauvais. Apparemment, il adore cette odeur nauséabonde. Il en renifle les fumées toxiques et se met à baver du miel de plus belle.",
+    "id_parent": 43,
+    "image": "http://romainlambot.fr/pokemons/images/44.png",
+    "name": "Ortide",
+    "type1": 11,
+    "type2": 12
+  },
+  {
+    "id_pokemon": 45,
+    "id_national": 45,
+    "description": "Rafflesia dispose des plus grands pétales du monde. Il s'en sert pour attirer ses proies avant de les endormir avec ses spores toxiques. Ce Pokémon n'a plus alors qu'à attraper sa proie et à la manger.",
+    "id_parent": 44,
+    "image": "http://romainlambot.fr/pokemons/images/45.png",
+    "name": "Rafflesia",
+    "type1": 11,
+    "type2": 12
+  },
+  {
+    "id_pokemon": 46,
+    "id_national": 46,
+    "description": "Paras accueille des champignons parasites appelés tochukaso qui poussent sur son dos. Ils grandissent grâce aux nutriments trouvés sur le dos de ce Pokémon Insecte. Ils peuvent rallonger l'espérance de vie.",
+    "id_parent": null,
+    "image": "http://romainlambot.fr/pokemons/images/46.png",
+    "name": "Paras",
+    "type1": 9,
+    "type2": 11
+  },
+  {
+    "id_pokemon": 47,
+    "id_national": 47,
+    "description": "On sait que les Parasect vivent en groupe dans les grands arbres et se nourrissent des nutriments contenus dans le tronc et les racines. Lorsqu'un arbre infesté meurt, ils se précipitent vers le prochain.",
+    "id_parent": 46,
+    "image": "http://romainlambot.fr/pokemons/images/47.png",
+    "name": "Parasect",
+    "type1": 9,
+    "type2": 11
+  },
+  {
+    "id_pokemon": 48,
+    "id_national": 48,
+    "description": "On raconte que Mimitoss a évolué avec une fourrure de poils fins et drus qui protège son corps tout entier. Il est doté de grands yeux capables de repérer ses proies, même minuscules.",
+    "id_parent": null,
+    "image": "http://romainlambot.fr/pokemons/images/48.png",
+    "name": "Mimitoss",
+    "type1": 9,
+    "type2": 12
+  },
+  {
+    "id_pokemon": 49,
+    "id_national": 49,
+    "description": "Aéromite est un Pokémon nocturne, il ne sort donc que la nuit. Ses proies préférées sont les petits insectes qui se rassemblent autour des réverbères, attirés par la lumière.",
+    "id_parent": 48,
+    "image": "http://romainlambot.fr/pokemons/images/49.png",
+    "name": "Aéromite",
+    "type1": 9,
+    "type2": 12
+  },
+  {
+    "id_pokemon": 50,
+    "id_national": 50,
+    "description": "Les Taupiqueur sont élevés dans la plupart des fermes. En effet, lorsque ce Pokémon creuse quelque part, le sol est comme labouré, prêt à recevoir les semences. On peut alors y planter de délicieux légumes.",
+    "id_parent": null,
+    "image": "http://romainlambot.fr/pokemons/images/50.png",
+    "name": "Taupiqueur",
+    "type1": 15,
+    "type2": null
+  },
+  {
+    "id_pokemon": 51,
+    "id_national": 51,
+    "description": "Les Triopikeur sont en fait des triplés qui ont émergé du même corps. C'est pourquoi chaque triplé pense exactement comme les deux autres. Ils creusent inlassablement, dans une coopération parfaite.",
+    "id_parent": 50,
+    "image": "http://romainlambot.fr/pokemons/images/51.png",
+    "name": "Triopikeur",
+    "type1": 15,
+    "type2": null
+  },
+  {
+    "id_pokemon": 52,
+    "id_national": 52,
+    "description": "Miaouss peut rentrer ses griffes dans ses pattes pour rôder gracieusement sans laisser de traces. Étrangement, ce Pokémon raffole des pièces d'or qui brillent à la lumière.",
+    "id_parent": null,
+    "image": "http://romainlambot.fr/pokemons/images/52.png",
+    "name": "Miaouss",
+    "type1": 10,
+    "type2": 17
+  },
+  {
+    "id_pokemon": 53,
+    "id_national": 53,
+    "description": "Persian a six grosses vibrisses qui lui donnent un air costaud et lui permettent de sentir les mouvements de l'air pour savoir ce qui se trouve à proximité. Il devient docile lorsqu'on l'attrape par les moustaches.",
+    "id_parent": 52,
+    "image": "http://romainlambot.fr/pokemons/images/53.png",
+    "name": "Persian",
+    "type1": 10,
+    "type2": 17
+  },
+  {
+    "id_pokemon": 54,
+    "id_national": 54,
+    "description": "Lorsqu'il utilise son mystérieux pouvoir, Psykokwak ne s'en souvient pas. Apparemment, il ne peut pas garder ce genre d'événement en mémoire, car il pratique ce pouvoir dans un état proche du sommeil profond.",
+    "id_parent": null,
+    "image": "http://romainlambot.fr/pokemons/images/54.png",
+    "name": "Psykokwak",
+    "type1": 4,
+    "type2": null
+  },
+  {
+    "id_pokemon": 55,
+    "id_national": 55,
+    "description": "Akwakwak est le Pokémon qui nage le plus vite. Il nage sans se fatiguer, même lorsque la mer est agitée. Il sauve parfois des gens coincés dans les navires bloqués en haute mer.",
+    "id_parent": 54,
+    "image": "http://romainlambot.fr/pokemons/images/55.png",
+    "name": "Akwakwak",
+    "type1": 4,
+    "type2": null
+  },
+  {
+    "id_pokemon": 56,
+    "id_national": 56,
+    "description": "Lorsque Férosinge commence à trembler et que sa respiration devient haletante, cela signifie qu'il est en colère. En outre, la moutarde lui monte au nez tellement vite qu'il est presque impossible d'échapper à sa colère.",
+    "id_parent": null,
+    "image": "http://romainlambot.fr/pokemons/images/56.png",
+    "name": "Férosinge",
+    "type1": 2,
+    "type2": null
+  },
+  {
+    "id_pokemon": 57,
+    "id_national": 57,
+    "description": "Lorsque Colossinge devient furieux, sa circulation sanguine s'accélère. Du coup, ses muscles sont encore plus puissants. En revanche, il devient bien moins intelligent.",
+    "id_parent": 56,
+    "image": "http://romainlambot.fr/pokemons/images/57.png",
+    "name": "Colossinge",
+    "type1": 2,
+    "type2": null
+  },
+  {
+    "id_pokemon": 58,
+    "id_national": 58,
+    "description": "Caninos a un odorat très développé. Ce Pokémon n'oublie jamais un parfum, quel qu'il soit. Il utilise son puissant sens olfactif pour deviner les émotions des autres créatures vivantes.",
+    "id_parent": null,
+    "image": "http://romainlambot.fr/pokemons/images/58.png",
+    "name": "Caninos",
+    "type1": 7,
+    "type2": null
+  },
+  {
+    "id_pokemon": 59,
+    "id_national": 59,
+    "description": "Arcanin est célèbre pour son extraordinaire vitesse. On le dit capable de parcourir plus de 10 000 km en 24 h. Le feu qui fait rage à l'intérieur du corps de ce Pokémon est la source de son pouvoir.",
+    "id_parent": 58,
+    "image": "http://romainlambot.fr/pokemons/images/59.png",
+    "name": "Arcanin",
+    "type1": 7,
+    "type2": null
+  },
+  {
+    "id_pokemon": 60,
+    "id_national": 60,
+    "description": "Ptitard a une peau très fine. On peut même voir les entrailles en spirale de ce Pokémon à travers sa peau. Malgré sa finesse, cette peau est aussi très élastique. Même les crocs les plus acérés rebondissent dessus.",
+    "id_parent": null,
+    "image": "http://romainlambot.fr/pokemons/images/60.png",
+    "name": "Ptitard",
+    "type1": 4,
+    "type2": null
+  },
+  {
+    "id_pokemon": 61,
+    "id_national": 61,
+    "description": "La peau de Têtarte est toujours maintenue humide par un liquide huileux. Grâce à cette protection graisseuse, il peut facilement se glisser hors de l'étreinte de n'importe quel ennemi.",
+    "id_parent": 60,
+    "image": "http://romainlambot.fr/pokemons/images/61.png",
+    "name": "Têtarte",
+    "type1": 4,
+    "type2": null
+  },
+  {
+    "id_pokemon": 62,
+    "id_national": 62,
+    "description": "Les muscles solides et surdéveloppés de Tartard ne se fatiguent jamais, quels que soient les efforts qu'il produit. Ce Pokémon est tellement endurant qu'il peut traverser un océan à la nage avec une étonnante facilité.",
+    "id_parent": 61,
+    "image": "http://romainlambot.fr/pokemons/images/62.png",
+    "name": "Tartard",
+    "type1": 4,
+    "type2": 2
+  },
+  {
+    "id_pokemon": 63,
+    "id_national": 63,
+    "description": "Abra doit dormir dix-huit heures par jour. S'il dort moins, ce Pokémon ne peut plus utiliser ses pouvoirs télékinétiques. Lorsqu'il est attaqué, Abra s'enfuit en utilisant Téléport, sans même se réveiller.",
+    "id_parent": null,
+    "image": "http://romainlambot.fr/pokemons/images/63.png",
+    "name": "Abra",
+    "type1": 13,
+    "type2": null
+  },
+  {
+    "id_pokemon": 64,
+    "id_national": 64,
+    "description": "Kadabra tient une cuiller en argent dans la main. Elle est utilisée pour amplifier les ondes alpha de son cerveau. Sans elle, on raconte que ce Pokémon ne peut utiliser que la moitié de ses pouvoirs télékinétiques.",
+    "id_parent": 63,
+    "image": "http://romainlambot.fr/pokemons/images/64.png",
+    "name": "Kadabra",
+    "type1": 13,
+    "type2": null
+  },
+  {
+    "id_pokemon": 65,
+    "id_national": 65,
+    "description": "Le cerveau d'Alakazam grossit sans arrêt, multipliant sans cesse ses cellules. Ce Pokémon a un QI incroyablement élevé, de 5 000. Il peut garder en mémoire tout ce qui s'est passé dans le monde.",
+    "id_parent": 64,
+    "image": "http://romainlambot.fr/pokemons/images/65.png",
+    "name": "Alakazam",
+    "type1": 13,
+    "type2": null
+  },
+  {
+    "id_pokemon": 66,
+    "id_national": 66,
+    "description": "Machoc s'entraîne en soulevant un Gravalanch, comme s'il s'agissait d'haltères. Certains Machoc voyagent un peu partout dans le monde pour apprendre à maîtriser tous les types d'arts martiaux.",
+    "id_parent": null,
+    "image": "http://romainlambot.fr/pokemons/images/66.png",
+    "name": "Machoc",
+    "type1": 2,
+    "type2": null
+  },
+  {
+    "id_pokemon": 67,
+    "id_national": 67,
+    "description": "Machopeur pratique le body-building tous les jours, même lorsqu'il aide les gens à réaliser de durs travaux. Pendant ses congés, ce Pokémon va s'entraîner dans les champs et les montagnes.",
+    "id_parent": 66,
+    "image": "http://romainlambot.fr/pokemons/images/67.png",
+    "name": "Machopeur",
+    "type1": 2,
+    "type2": null
+  },
+  {
+    "id_pokemon": 68,
+    "id_national": 68,
+    "description": "Mackogneur est célèbre, car c'est le seul Pokémon qui a réussi à maîtriser tous les types d'arts martiaux. S'il parvient à attraper son ennemi avec ses quatre bras, il le projette par-delà l'horizon.",
+    "id_parent": 67,
+    "image": "http://romainlambot.fr/pokemons/images/68.png",
+    "name": "Mackogneur",
+    "type1": 2,
+    "type2": null
+  },
+  {
+    "id_pokemon": 69,
+    "id_national": 69,
+    "description": "Le corps long et flexible de Chétiflor lui permet de se tordre et d'osciller pour éviter tout type d'attaque, même les plus puissantes. Ce Pokémon crache un fluide corrosif qui peut même dissoudre le fer.",
+    "id_parent": null,
+    "image": "http://romainlambot.fr/pokemons/images/69.png",
+    "name": "Chétiflor",
+    "type1": 11,
+    "type2": 12
+  },
+  {
+    "id_pokemon": 70,
+    "id_national": 70,
+    "description": "Boustiflor est doté d'un gros crochet. La nuit, ce Pokémon s'accroche à une branche pour s'endormir. Quand il a un sommeil agité, il se réveille par terre.",
+    "id_parent": 69,
+    "image": "http://romainlambot.fr/pokemons/images/70.png",
+    "name": "Boustiflor",
+    "type1": 11,
+    "type2": 12
+  },
+  {
+    "id_pokemon": 71,
+    "id_national": 71,
+    "description": "Empiflor est doté d'une longue liane qui part de sa tête. Cette liane se balance et remue comme un animal pour attirer ses proies. Lorsque l'une d'elles s'approche un peu trop près, ce Pokémon l'avale entièrement.",
+    "id_parent": 70,
+    "image": "http://romainlambot.fr/pokemons/images/71.png",
+    "name": "Empiflor",
+    "type1": 11,
+    "type2": 12
+  },
+  {
+    "id_pokemon": 72,
+    "id_national": 72,
+    "description": "Grâce à l'eau de son corps, Tentacool convertit la lumière du soleil absorbée et la renvoie sous forme de rayon d'énergie. Ce Pokémon lance ces rayons par le petit organe rond situé au-dessus de ses yeux.",
+    "id_parent": null,
+    "image": "http://romainlambot.fr/pokemons/images/72.png",
+    "name": "Tentacool",
+    "type1": 4,
+    "type2": 12
+  },
+  {
+    "id_pokemon": 73,
+    "id_national": 73,
+    "description": "Les tentacules de Tentacruel peuvent s'allonger et se rétracter à volonté. Il serre sa proie dans ses tentacules et l'affaiblit en lui injectant une toxine. Il peut attraper jusqu'à 80 proies en même temps.",
+    "id_parent": 72,
+    "image": "http://romainlambot.fr/pokemons/images/73.png",
+    "name": "Tentacruel",
+    "type1": 4,
+    "type2": 12
+  },
+  {
+    "id_pokemon": 74,
+    "id_national": 74,
+    "description": "Pour dormir profondément, Racaillou s'enterre à moitié dans le sol. Il ne se réveille pas, même si des randonneurs lui marchent dessus. Au petit matin, ce Pokémon roule en contrebas en quête de nourriture.",
+    "id_parent": null,
+    "image": "http://romainlambot.fr/pokemons/images/74.png",
+    "name": "Racaillou",
+    "type1": 14,
+    "type2": 15
+  },
+  {
+    "id_pokemon": 75,
+    "id_national": 75,
+    "description": "La nourriture préférée de Gravalanch est la roche. Ce Pokémon escalade parfois les montagnes, dévorant les rochers sur son passage. Une fois au sommet, il se laisse rouler jusqu'en bas.",
+    "id_parent": 74,
+    "image": "http://romainlambot.fr/pokemons/images/75.png",
+    "name": "Gravalanch",
+    "type1": 14,
+    "type2": 15
+  },
+  {
+    "id_pokemon": 76,
+    "id_national": 76,
+    "description": "On sait que les Grolem se laissent rouler en bas des montagnes. Afin d'éviter qu'ils roulent sur les maisons des gens, des tranchées ont été creusées le long des montagnes pour les guider dans leurs descentes infernales.",
+    "id_parent": 75,
+    "image": "http://romainlambot.fr/pokemons/images/76.png",
+    "name": "Grolem",
+    "type1": 14,
+    "type2": 15
+  },
+  {
+    "id_pokemon": 77,
+    "id_national": 77,
+    "description": "À sa naissance, Ponyta est très faible. Il peut à peine tenir debout. Ce Pokémon se muscle en trébuchant et en tombant, lorsqu'il essaie de suivre ses parents.",
+    "id_parent": null,
+    "image": "http://romainlambot.fr/pokemons/images/77.png",
+    "name": "Ponyta",
+    "type1": 7,
+    "type2": null
+  },
+  {
+    "id_pokemon": 78,
+    "id_national": 78,
+    "description": "On voit souvent Galopa trotter dans les champs et les plaines. Cependant, lorsque ce Pokémon s'en donne la peine, il peut galoper à plus de 240 km/h et sa crinière flamboyante s'embrase.",
+    "id_parent": 77,
+    "image": "http://romainlambot.fr/pokemons/images/78.png",
+    "name": "Galopa",
+    "type1": 7,
+    "type2": null
+  },
+  {
+    "id_pokemon": 79,
+    "id_national": 79,
+    "description": "Ramoloss trempe sa queue dans l'eau au bord des rivières pour attraper ses proies. Cependant, ce Pokémon oublie souvent ce qu'il fait là et passe des jours entiers à traîner au bord de l'eau.",
+    "id_parent": null,
+    "image": "http://romainlambot.fr/pokemons/images/79.png",
+    "name": "Ramoloss",
+    "type1": 4,
+    "type2": 13
+  },
+  {
+    "id_pokemon": 80,
+    "id_national": 80,
+    "description": "Flagadoss a un Kokiyas solidement attaché à sa queue. Du coup, il ne peut plus l'utiliser pour pêcher. Flagadoss est donc obligé, à contrecœur, de nager pour attraper ses proies.",
+    "id_parent": 79,
+    "image": "http://romainlambot.fr/pokemons/images/80.png",
+    "name": "Flagadoss",
+    "type1": 4,
+    "type2": 13
+  },
+  {
+    "id_pokemon": 81,
+    "id_national": 81,
+    "description": "Magnéti flotte dans les airs en émettant des ondes électromagnétiques par les aimants sur ses côtés. Ces ondes annulent les effets de la gravité. Ce Pokémon ne peut plus voler si son stock d'électricité est épuisé.",
+    "id_parent": null,
+    "image": "http://romainlambot.fr/pokemons/images/81.png",
+    "name": "Magnéti",
+    "type1": 5,
+    "type2": 1
+  },
+  {
+    "id_pokemon": 82,
+    "id_national": 82,
+    "description": "Magnéton émet un puissant champ magnétique qui neutralise les appareils électroniques. Certaines villes demandent aux propriétaires de ces Pokémon de les garder dans leurs Poké Balls.",
+    "id_parent": 81,
+    "image": "http://romainlambot.fr/pokemons/images/82.png",
+    "name": "Magnéton",
+    "type1": 5,
+    "type2": 1
+  },
+  {
+    "id_pokemon": 83,
+    "id_national": 83,
+    "description": "On voit souvent des Canarticho avec une tige, récupérée sur une plante quelconque. Apparemment, ils peuvent distinguer les bonnes des mauvaises. On a vu ces Pokémon se battre pour des histoires de tiges.",
+    "id_parent": null,
+    "image": "http://romainlambot.fr/pokemons/images/83.png",
+    "name": "Canarticho",
+    "type1": 10,
+    "type2": 18
+  },
+  {
+    "id_pokemon": 84,
+    "id_national": 84,
+    "description": "Les deux têtes de Doduo contiennent des cerveaux totalement identiques. Une étude scientifique démontra que dans des cas rares, certains de ces Pokémon possèdent des cerveaux différents.",
+    "id_parent": null,
+    "image": "http://romainlambot.fr/pokemons/images/84.png",
+    "name": "Doduo",
+    "type1": 10,
+    "type2": 18
+  },
+  {
+    "id_pokemon": 85,
+    "id_national": 85,
+    "description": "Apparemment, Dodrio ne se contente pas d'avoir trois têtes. Il semble également avoir trois cœurs et six poumons, ce qui lui permet de courir très longtemps sans s'épuiser.",
+    "id_parent": 84,
+    "image": "http://romainlambot.fr/pokemons/images/85.png",
+    "name": "Dodrio",
+    "type1": 10,
+    "type2": 18
+  },
+  {
+    "id_pokemon": 86,
+    "id_national": 86,
+    "description": "Otaria chasse ses proies dans l'eau gelée, sous la couche de glace. Lorsqu'il cherche à respirer, il perce un trou en frappant la glace avec la partie saillante de sa tête.",
+    "id_parent": null,
+    "image": "http://romainlambot.fr/pokemons/images/86.png",
+    "name": "Otaria",
+    "type1": 4,
+    "type2": null
+  },
+  {
+    "id_pokemon": 87,
+    "id_national": 87,
+    "description": "Lamantine adore piquer un roupillon à même la glace. Il y a très longtemps, un marin ayant aperçu ce Pokémon dormant sur un glacier a cru voir une sirène.",
+    "id_parent": 86,
+    "image": "http://romainlambot.fr/pokemons/images/87.png",
+    "name": "Lamantine",
+    "type1": 4,
+    "type2": 8
+  },
+  {
+    "id_pokemon": 88,
+    "id_national": 88,
+    "description": "Tadmorv est apparu dans la vase accumulée sur un bord de mer pollué. Ce Pokémon aime tout ce qui est dégoûtant. Une substance pleine de germes suinte constamment de tout son corps.",
+    "id_parent": null,
+    "image": "http://romainlambot.fr/pokemons/images/88.png",
+    "name": "Tadmorv",
+    "type1": 12,
+    "type2": null
+  },
+  {
+    "id_pokemon": 89,
+    "id_national": 89,
+    "description": "Ce Pokémon ne mange que ce qui est répugnant et abject. Les Grotadmorv se rassemblent dans les villes où les gens jettent tout par terre, dans la rue.",
+    "id_parent": 88,
+    "image": "http://romainlambot.fr/pokemons/images/89.png",
+    "name": "Grotadmorv",
+    "type1": 12,
+    "type2": null
+  },
+  {
+    "id_pokemon": 90,
+    "id_national": 90,
+    "description": "La nuit, ce Pokémon utilise sa grande langue pour creuser un trou dans le sable des fonds marins afin d'y dormir. Une fois endormi, Kokiyas referme sa coquille, mais laisse sa langue dépasser.",
+    "id_parent": null,
+    "image": "http://romainlambot.fr/pokemons/images/90.png",
+    "name": "Kokiyas",
+    "type1": 4,
+    "type2": null
+  },
+  {
+    "id_pokemon": 91,
+    "id_national": 91,
+    "description": "Crustabri est capable de se déplacer dans les fonds marins en avalant de l'eau et en la rejetant vers l'arrière. Ce Pokémon envoie des pointes en utilisant la même méthode.",
+    "id_parent": 90,
+    "image": "http://romainlambot.fr/pokemons/images/91.png",
+    "name": "Crustabri",
+    "type1": 4,
+    "type2": 8
+  },
+  {
+    "id_pokemon": 92,
+    "id_national": 92,
+    "description": "Fantominus est principalement constitué de matière gazeuse. Lorsqu'il est exposé au vent, son corps gazeux se disperse et diminue. Des groupes de ce Pokémon se rassemblent sous les auvents des maisons pour se protéger.",
+    "id_parent": null,
+    "image": "http://romainlambot.fr/pokemons/images/92.png",
+    "name": "Fantominus",
+    "type1": 16,
+    "type2": 12
+  },
+  {
+    "id_pokemon": 93,
+    "id_national": 93,
+    "description": "Spectrum est un Pokémon dangereux. Si l'un d'entre eux fait signe d'approcher, il ne faut jamais l'écouter. Ce Pokémon risque de sortir sa langue pour essayer de voler votre vie.",
+    "id_parent": 92,
+    "image": "http://romainlambot.fr/pokemons/images/93.png",
+    "name": "Spectrum",
+    "type1": 16,
+    "type2": 12
+  },
+  {
+    "id_pokemon": 94,
+    "id_national": 94,
+    "description": "Parfois, pendant les nuits noires, une ombre projetée par un réverbère peut tout à coup vous dépasser. Il s'agit d'un Ectoplasma qui court, en se faisant passer pour l'ombre de quelqu'un d'autre.",
+    "id_parent": 93,
+    "image": "http://romainlambot.fr/pokemons/images/94.png",
+    "name": "Ectoplasma",
+    "type1": 16,
+    "type2": 12
+  },
+  {
+    "id_pokemon": 95,
+    "id_national": 95,
+    "description": "Onix a dans le cerveau un aimant qui lui sert de boussole. Il permet à ce Pokémon de ne pas se perdre pendant qu'il creuse. En prenant de l'âge, son corps s'arrondit et se polit.",
+    "id_parent": null,
+    "image": "http://romainlambot.fr/pokemons/images/95.png",
+    "name": "Onix",
+    "type1": 14,
+    "type2": 15
+  },
+  {
+    "id_pokemon": 96,
+    "id_national": 96,
+    "description": "Lorsque les enfants ont le nez qui les démange en dormant, c'est sans doute parce que ce Pokémon se tient au-dessus de leur oreiller, afin d'essayer de manger leurs rêves par leurs narines.",
+    "id_parent": null,
+    "image": "http://romainlambot.fr/pokemons/images/96.png",
+    "name": "Soporifik",
+    "type1": 13,
+    "type2": null
+  },
+  {
+    "id_pokemon": 97,
+    "id_national": 97,
+    "description": "Hypnomade tient un pendule dans sa main. Le mouvement de balancier et les reflets brillants du pendule hypnotisent profondément son ennemi. Lorsque ce Pokémon cherche ses proies, il nettoie son pendule.",
+    "id_parent": 96,
+    "image": "http://romainlambot.fr/pokemons/images/97.png",
+    "name": "Hypnomade",
+    "type1": 13,
+    "type2": null
+  },
+  {
+    "id_pokemon": 98,
+    "id_national": 98,
+    "description": "Krabby vit sur les plages, enterré dans le sable. Sur les plages où on trouve peu de nourriture, on peut voir ces Pokémon se disputer pour défendre leur territoire.",
+    "id_parent": null,
+    "image": "http://romainlambot.fr/pokemons/images/98.png",
+    "name": "Krabby",
+    "type1": 4,
+    "type2": null
+  },
+  {
+    "id_pokemon": 99,
+    "id_national": 99,
+    "description": "Krabboss est doté d'une pince gigantesque, surdimensionnée. Il l'agite en l'air pour communiquer avec ses semblables. En revanche, sa pince est tellement lourde que ce Pokémon se fatigue très vite.",
+    "id_parent": 98,
+    "image": "http://romainlambot.fr/pokemons/images/99.png",
+    "name": "Krabboss",
+    "type1": 4,
+    "type2": null
+  },
+  {
+    "id_pokemon": 100,
+    "id_national": 100,
+    "description": "Voltorbe est extrêmement sensible. Il explose au moindre choc. On raconte qu'il fut créé par l'exposition d'une Poké Ball à une puissante dose d'énergie.",
+    "id_parent": null,
+    "image": "http://romainlambot.fr/pokemons/images/100.png",
+    "name": "Voltorbe",
+    "type1": 5,
+    "type2": null
+  },
+  {
+    "id_pokemon": 101,
+    "id_national": 101,
+    "description": "L'une des caractéristiques d'Électrode est son attirance pour l'électricité. Ces Pokémon posent problème lorsqu'ils se rassemblent dans les centrales électriques pour se nourrir de courant fraîchement généré.",
+    "id_parent": 100,
+    "image": "http://romainlambot.fr/pokemons/images/101.png",
+    "name": "Électrode",
+    "type1": 5,
+    "type2": null
+  },
+  {
+    "id_pokemon": 102,
+    "id_national": 102,
+    "description": "Ce Pokémon est constitué de six œufs formant une grappe serrée. Ces six œufs s'attirent mutuellement et pivotent. Quand des fissures apparaissent sur les coquilles, ça signifie que Noeunoeuf est sur le point d'évoluer.",
+    "id_parent": null,
+    "image": "http://romainlambot.fr/pokemons/images/102.png",
+    "name": "Noeunoeuf",
+    "type1": 11,
+    "type2": 13
+  },
+  {
+    "id_pokemon": 103,
+    "id_national": 103,
+    "description": "Noadkoko vient des tropiques. À force de vivre sous un soleil ardent, ses têtes ont rapidement grandi. On raconte que lorsque ses têtes tombent, elles se rassemblent et forment un Noeunoeuf.",
+    "id_parent": 102,
+    "image": "http://romainlambot.fr/pokemons/images/103.png",
+    "name": "Noadkoko",
+    "type1": 11,
+    "type2": 13
+  },
+  {
+    "id_pokemon": 104,
+    "id_national": 104,
+    "description": "La maman d'Osselait lui manque terriblement et il ne la reverra jamais. La lune le fait pleurer, car elle lui rappelle sa mère. Les taches sur le crâne que porte ce Pokémon sont les marques de ses larmes.",
+    "id_parent": null,
+    "image": "http://romainlambot.fr/pokemons/images/104.png",
+    "name": "Osselait",
+    "type1": 15,
+    "type2": null
+  },
+  {
+    "id_pokemon": 105,
+    "id_national": 105,
+    "description": "Ossatueur est la forme évoluée d'Osselait. Il a surmonté le chagrin causé par la perte de sa maman et s'est endurci. Le tempérament décidé et entier de ce Pokémon le rend très difficile à amadouer.",
+    "id_parent": 104,
+    "image": "http://romainlambot.fr/pokemons/images/105.png",
+    "name": "Ossatueur",
+    "type1": 15,
+    "type2": 7
+  },
+  {
+    "id_pokemon": 106,
+    "id_national": 106,
+    "description": "Les jambes de Kicklee peuvent se contracter et s'étirer à volonté. Grâce à ces jambes à ressort, il terrasse ses ennemis en les rouant de coups de pied. Après les combats, il masse ses jambes pour éviter de sentir la fatigue.",
+    "id_parent": null,
+    "image": "http://romainlambot.fr/pokemons/images/106.png",
+    "name": "Kicklee",
+    "type1": 2,
+    "type2": null
+  },
+  {
+    "id_pokemon": 107,
+    "id_national": 107,
+    "description": "On raconte que Tygnon dispose de l'état d'esprit d'un boxeur qui s'entraîne pour le championnat du monde. Ce Pokémon est doté d'une ténacité à toute épreuve et n'abandonne jamais face à l'adversité.",
+    "id_parent": 106,
+    "image": "http://romainlambot.fr/pokemons/images/107.png",
+    "name": "Tygnon",
+    "type1": 2,
+    "type2": null
+  },
+  {
+    "id_pokemon": 108,
+    "id_national": 108,
+    "description": "Chaque fois qu'Excelangue découvre quelque chose de nouveau, il le lèche. Sa mémoire est basée sur le goût et la texture des objets. Il n'aime pas les choses acides.",
+    "id_parent": null,
+    "image": "http://romainlambot.fr/pokemons/images/108.png",
+    "name": "Excelangue",
+    "type1": 10,
+    "type2": null
+  },
+  {
+    "id_pokemon": 109,
+    "id_national": 109,
+    "description": "Smogo est composé de substances toxiques. Il mélange des toxines et des détritus pour déclencher une réaction chimique générant un gaz très dangereux. Plus la température est élevée, plus la quantité de gaz est importante.",
+    "id_parent": null,
+    "image": "http://romainlambot.fr/pokemons/images/109.png",
+    "name": "Smogo",
+    "type1": 12,
+    "type2": null
+  },
+  {
+    "id_pokemon": 110,
+    "id_national": 110,
+    "description": "Smogogo rétrécit ou gonfle ses deux corps pour mélanger les gaz toxiques qui s'y trouvent. Lorsque les gaz sont bien mélangés, la toxine devient très puissante. Le Pokémon se putréfie aussi un peu plus.",
+    "id_parent": 109,
+    "image": "http://romainlambot.fr/pokemons/images/110.png",
+    "name": "Smogogo",
+    "type1": 12,
+    "type2": null
+  },
+  {
+    "id_pokemon": 111,
+    "id_national": 111,
+    "description": "Le cerveau de Rhinocorne est tout petit, à tel point que lorsqu'il attaque, il lui arrive d'oublier pourquoi il a commencé à charger. Il lui arrive de se souvenir qu'il a démoli certaines choses.",
+    "id_parent": null,
+    "image": "http://romainlambot.fr/pokemons/images/111.png",
+    "name": "Rhinocorne",
+    "type1": 15,
+    "type2": 14
+  },
+  {
+    "id_pokemon": 112,
+    "id_national": 112,
+    "description": "La corne de Rhinoféros lui sert de foreuse. Il l'utilise pour détruire des rochers et des cailloux. Ce Pokémon charge de temps en temps dans du magma en fusion, mais sa peau blindée le protège de la chaleur.",
+    "id_parent": 111,
+    "image": "http://romainlambot.fr/pokemons/images/112.png",
+    "name": "Rhinoféros",
+    "type1": 15,
+    "type2": 14
+  },
+  {
+    "id_pokemon": 113,
+    "id_national": 113,
+    "description": "Leveinard pond tous les jours des œufs pleins de vitamines. Ces œufs sont tellement bons que les gens les mangent même quand ils n'ont pas faim.",
+    "id_parent": null,
+    "image": "http://romainlambot.fr/pokemons/images/113.png",
+    "name": "Leveinard",
+    "type1": 10,
+    "type2": null
+  },
+  {
+    "id_pokemon": 114,
+    "id_national": 114,
+    "description": "Les lianes de Saquedeneu se brisent facilement lorsqu'on les attrape. Cela ne lui fait pas mal et lui permet simplement de s'échapper rapidement. Les lianes cassées repoussent le lendemain.",
+    "id_parent": null,
+    "image": "http://romainlambot.fr/pokemons/images/114.png",
+    "name": "Saquedeneu",
+    "type1": 11,
+    "type2": null
+  },
+  {
+    "id_pokemon": 115,
+    "id_national": 115,
+    "description": "Lorsqu'on rencontre un petit Kangourex qui joue tout seul, il ne faut jamais le déranger ou essayer de l'attraper. Les parents du bébé Pokémon sont sûrement dans le coin et ils risquent d'entrer dans une colère noire.",
+    "id_parent": null,
+    "image": "http://romainlambot.fr/pokemons/images/115.png",
+    "name": "Kangourex",
+    "type1": 10,
+    "type2": null
+  },
+  {
+    "id_pokemon": 116,
+    "id_national": 116,
+    "description": "Lorsque Hypotrempe sent un danger, il libère instinctivement une épaisse encre noire pour pouvoir s'échapper. Ce Pokémon nage en agitant sa nageoire dorsale.",
+    "id_parent": null,
+    "image": "http://romainlambot.fr/pokemons/images/116.png",
+    "name": "Hypotrempe",
+    "type1": 4,
+    "type2": null
+  },
+  {
+    "id_pokemon": 117,
+    "id_national": 117,
+    "description": "Hypocéan déclenche des tourbillons en faisant tournoyer son corps. Ces tourbillons sont assez puissants pour engloutir des bateaux de pêche. Ce Pokémon affaiblit sa proie grâce à ces courants, puis l'avale en une bouchée.",
+    "id_parent": 116,
+    "image": "http://romainlambot.fr/pokemons/images/117.png",
+    "name": "Hypocéan",
+    "type1": 4,
+    "type2": null
+  },
+  {
+    "id_pokemon": 118,
+    "id_national": 118,
+    "description": "Poissirène adore nager librement dans les rivières et les étangs. Si l'un de ces Pokémon est mis dans un aquarium, il n'hésitera pas à casser la vitre avec sa puissante corne pour s'enfuir.",
+    "id_parent": null,
+    "image": "http://romainlambot.fr/pokemons/images/118.png",
+    "name": "Poissirène",
+    "type1": 4,
+    "type2": null
+  },
+  {
+    "id_pokemon": 119,
+    "id_national": 119,
+    "description": "Les Poissoroy font tout pour protéger leurs œufs. Les mâles et les femelles patrouillent pour surveiller le nid et les œufs. La garde de ces œufs dure un peu plus d'un mois.",
+    "id_parent": 118,
+    "image": "http://romainlambot.fr/pokemons/images/119.png",
+    "name": "Poissoroy",
+    "type1": 4,
+    "type2": null
+  },
+  {
+    "id_pokemon": 120,
+    "id_national": 120,
+    "description": "Stari communique apparemment avec les étoiles dans le ciel en faisant clignoter son cœur rouge. Si des parties de son corps sont cassées, ce Pokémon les régénère.",
+    "id_parent": null,
+    "image": "http://romainlambot.fr/pokemons/images/120.png",
+    "name": "Stari",
+    "type1": 4,
+    "type2": null
+  },
+  {
+    "id_pokemon": 121,
+    "id_national": 121,
+    "description": "Staross nage en faisant tournoyer son corps en forme d'étoile, un peu à la manière d'une hélice de bateau. Le cœur au centre du corps de ce Pokémon brille de sept couleurs.",
+    "id_parent": 120,
+    "image": "http://romainlambot.fr/pokemons/images/121.png",
+    "name": "Staross",
+    "type1": 4,
+    "type2": 13
+  },
+  {
+    "id_pokemon": 122,
+    "id_national": 122,
+    "description": "M. Mime est un pantomime hors pair. Ses gestes et ses mouvements parviennent à faire croire que quelque chose d'invisible existe réellement. Lorsqu'on y croit, ces choses deviennent palpables.",
+    "id_parent": null,
+    "image": "http://romainlambot.fr/pokemons/images/122.png",
+    "name": "M.Mime",
+    "type1": 13,
+    "type2": 6
+  },
+  {
+    "id_pokemon": 123,
+    "id_national": 123,
+    "description": "Insécateur est incroyablement rapide. Sa vitesse fulgurante améliore l'efficacité des deux lames situées sur ses avant-bras. Elles sont si coupantes qu'elles peuvent trancher un énorme tronc d'arbre en un coup.",
+    "id_parent": null,
+    "image": "http://romainlambot.fr/pokemons/images/123.png",
+    "name": "Insécateur",
+    "type1": 9,
+    "type2": 18
+  },
+  {
+    "id_pokemon": 124,
+    "id_national": 124,
+    "description": "Lippoutou marche en rythme, ondule de tout son corps et se déhanche comme s'il dansait. Ses mouvements sont si communicatifs que les gens qui le voient sont soudain pris d'une terrible envie de bouger les hanches, sans réfléchir.",
+    "id_parent": null,
+    "image": "http://romainlambot.fr/pokemons/images/124.png",
+    "name": "Lippoutou",
+    "type1": 8,
+    "type2": 13
+  },
+  {
+    "id_pokemon": 125,
+    "id_national": 125,
+    "description": "Lorsqu'une tempête approche, des groupes entiers de ce Pokémon se battent pour grimper sur les hauteurs, où la foudre a le plus de chance de tomber. Certaines villes se servent d'Élektek en guise de paratonnerres.",
+    "id_parent": null,
+    "image": "http://romainlambot.fr/pokemons/images/125.png",
+    "name": "Élektek",
+    "type1": 5,
+    "type2": null
+  },
+  {
+    "id_pokemon": 126,
+    "id_national": 126,
+    "description": "Lorsqu'il se bat, Magmar fait jaillir des flammes de son corps pour intimider son adversaire. Les explosions enflammées de ce Pokémon déclenchent des vagues de chaleur qui embrasent la végétation environnante.",
+    "id_parent": null,
+    "image": "http://romainlambot.fr/pokemons/images/126.png",
+    "name": "Magmar",
+    "type1": 7,
+    "type2": null
+  },
+  {
+    "id_pokemon": 127,
+    "id_national": 127,
+    "description": "Scarabrute est doté de cornes imposantes. Des pointes jaillissent de la surface de ses cornes. Ces pointes s'enfoncent profondément dans le corps de l'ennemi, l'empêchant ainsi de s'échapper.",
+    "id_parent": null,
+    "image": "http://romainlambot.fr/pokemons/images/127.png",
+    "name": "Scarabrute",
+    "type1": 9,
+    "type2": null
+  },
+  {
+    "id_pokemon": 128,
+    "id_national": 128,
+    "description": "Ce Pokémon n'est pas satisfait s'il ne détruit pas tout sur son passage. Lorsque Tauros ne trouve pas d'adversaire, il se rue sur de gros arbres et les déracine pour passer ses nerfs.",
+    "id_parent": null,
+    "image": "http://romainlambot.fr/pokemons/images/128.png",
+    "name": "Tauros",
+    "type1": 10,
+    "type2": null
+  },
+  {
+    "id_pokemon": 129,
+    "id_national": 129,
+    "description": "Magicarpe est virtuellement inutile en combat. Il se contente de faire des ronds dans l'eau. On le considère plutôt faible. Pourtant, ce Pokémon est très robuste et peut survivre dans n'importe quel environnement, même très pollué.",
+    "id_parent": null,
+    "image": "http://romainlambot.fr/pokemons/images/129.png",
+    "name": "Magicarpe",
+    "type1": 4,
+    "type2": null
+  },
+  {
+    "id_pokemon": 130,
+    "id_national": 130,
+    "description": "Lorsque Léviator commence à s'énerver, sa nature violente ne se calme qu'une fois qu'il a tout réduit en cendres. La fureur de ce Pokémon peut durer pendant un mois.",
+    "id_parent": 129,
+    "image": "http://romainlambot.fr/pokemons/images/130.png",
+    "name": "Léviator",
+    "type1": 4,
+    "type2": 18
+  },
+  {
+    "id_pokemon": 131,
+    "id_national": 131,
+    "description": "Les Lokhlass sont en voie d'extinction. Le soir, on entend ce Pokémon chantonner une complainte mélancolique, espérant retrouver ses rares congénères.",
+    "id_parent": 130,
+    "image": "http://romainlambot.fr/pokemons/images/131.png",
+    "name": "Lokhlass",
+    "type1": 4,
+    "type2": 8
+  },
+  {
+    "id_pokemon": 132,
+    "id_national": 132,
+    "description": "Métamorph peut modifier sa structure moléculaire pour prendre d'autres formes. Lorsqu'il essaie de se transformer de mémoire, il lui arrive de se tromper sur certains détails.",
+    "id_parent": null,
+    "image": "http://romainlambot.fr/pokemons/images/132.png",
+    "name": "Métamorph",
+    "type1": 10,
+    "type2": null
+  },
+  {
+    "id_pokemon": 133,
+    "id_national": 133,
+    "description": "Évoli a une structure génétique instable qui se transforme en fonction de l'environnement dans lequel il vit. Ce Pokémon peut évoluer grâce aux radiations de diverses pierres.",
+    "id_parent": null,
+    "image": "http://romainlambot.fr/pokemons/images/133.png",
+    "name": "Évoli",
+    "type1": 10,
+    "type2": null
+  },
+  {
+    "id_pokemon": 134,
+    "id_national": 134,
+    "description": "Aquali a subi une mutation spontanée. Des nageoires et des branchies sont apparues sur son corps, ce qui lui permet de vivre dans les fonds marins. Ce Pokémon peut contrôler l'eau à volonté.",
+    "id_parent": 133,
+    "image": "http://romainlambot.fr/pokemons/images/134.png",
+    "name": "Aquali",
+    "type1": 4,
+    "type2": null
+  },
+  {
+    "id_pokemon": 135,
+    "id_national": 135,
+    "description": "Les cellules de Voltali génèrent un courant de faible intensité. Ce pouvoir est amplifié par l'électricité statique de ses poils, ce qui lui permet d'envoyer des éclairs. Sa fourrure hérissée est faite d'aiguilles chargées d'électricité.",
+    "id_parent": 133,
+    "image": "http://romainlambot.fr/pokemons/images/135.png",
+    "name": "Voltali",
+    "type1": 5,
+    "type2": null
+  },
+  {
+    "id_pokemon": 136,
+    "id_national": 136,
+    "description": "La fourrure soyeuse de Pyroli a une fonction anatomique. Elle rejette la chaleur dans l'air pour que son corps ne surchauffe pas. La température du corps de ce Pokémon peut atteindre 900 °C.",
+    "id_parent": 133,
+    "image": "http://romainlambot.fr/pokemons/images/136.png",
+    "name": "Pyroli",
+    "type1": 7,
+    "type2": null
+  },
+  {
+    "id_pokemon": 137,
+    "id_national": 137,
+    "description": "Porygon est capable de se décompiler et de retourner à l'état de programme informatique pour entrer dans le cyberespace. Ce Pokémon est protégé contre le piratage, il est donc impossible de le copier.",
+    "id_parent": null,
+    "image": "http://romainlambot.fr/pokemons/images/137.png",
+    "name": "Porygon",
+    "type1": 10,
+    "type2": null
+  },
+  {
+    "id_pokemon": 138,
+    "id_national": 138,
+    "description": "Amonita est l'un des Pokémon disparus depuis longtemps et qui furent ressuscités à partir de fossiles. Lorsqu'il est attaqué par un ennemi, il se rétracte dans sa coquille.",
+    "id_parent": null,
+    "image": "http://romainlambot.fr/pokemons/images/138.png",
+    "name": "Amonita",
+    "type1": 14,
+    "type2": 4
+  },
+  {
+    "id_pokemon": 139,
+    "id_national": 139,
+    "description": "Amonistar utilise ses tentacules pour capturer ses proies. On pense que l'espèce s'est éteinte parce que sa coquille était devenue trop grande et trop lourde, ce qui rendait ses mouvements lents et pesants.",
+    "id_parent": 138,
+    "image": "http://romainlambot.fr/pokemons/images/139.png",
+    "name": "Amonistar",
+    "type1": 14,
+    "type2": 4
+  },
+  {
+    "id_pokemon": 140,
+    "id_national": 140,
+    "description": "Kabuto est un Pokémon ressuscité à partir d'un fossile. Cependant, on a découvert des spécimens vivants. Ce Pokémon n'a pas changé depuis 300 millions d'années.",
+    "id_parent": null,
+    "image": "http://romainlambot.fr/pokemons/images/140.png",
+    "name": "Kabuto",
+    "type1": 14,
+    "type2": 4
+  },
+  {
+    "id_pokemon": 141,
+    "id_national": 141,
+    "description": "Jadis, Kabutops plongeait dans les profondeurs pour trouver ses proies. Apparemment, ce Pokémon vivant sur terre est l'évolution d'une créature marine, comme le prouvent les changements dans ses branchies.",
+    "id_parent": 140,
+    "image": "http://romainlambot.fr/pokemons/images/141.png",
+    "name": "Kabutops",
+    "type1": 14,
+    "type2": 4
+  },
+  {
+    "id_pokemon": 142,
+    "id_national": 142,
+    "description": "Ptéra est un Pokémon de l'ère des dinosaures. Il fut ressuscité à partir de cellules extraites d'un morceau d'ambre. On pense qu'il était le roi des cieux à l'époque préhistorique.",
+    "id_parent": null,
+    "image": "http://romainlambot.fr/pokemons/images/142.png",
+    "name": "Ptéra",
+    "type1": 14,
+    "type2": 18
+  },
+  {
+    "id_pokemon": 143,
+    "id_national": 143,
+    "description": "Les journées de Ronflex se résument aux repas et aux siestes. C'est un Pokémon tellement gentil que les enfants n'hésitent pas à jouer sur son énorme ventre.",
+    "id_parent": null,
+    "image": "http://romainlambot.fr/pokemons/images/143.png",
+    "name": "Ronflex",
+    "type1": 10,
+    "type2": null
+  },
+  {
+    "id_pokemon": 144,
+    "id_national": 144,
+    "description": "Artikodin est un Pokémon Oiseau légendaire qui peut contrôler la glace. Le battement de ses ailes gèle l'air tout autour de lui. C'est pourquoi on dit que lorsque ce Pokémon vole, il va neiger.",
+    "id_parent": null,
+    "image": "http://romainlambot.fr/pokemons/images/144.png",
+    "name": "Artikodin",
+    "type1": 8,
+    "type2": 18
+  },
+  {
+    "id_pokemon": 145,
+    "id_national": 145,
+    "description": "Électhor est un Pokémon Oiseau légendaire capable de contrôler l'électricité. Il vit généralement dans les nuages orageux. Ce Pokémon gagne en puissance lorsqu'il est frappé par la foudre.",
+    "id_parent": null,
+    "image": "http://romainlambot.fr/pokemons/images/145.png",
+    "name": "Électhor",
+    "type1": 5,
+    "type2": 18
+  },
+  {
+    "id_pokemon": 146,
+    "id_national": 146,
+    "description": "Sulfura est un Pokémon Oiseau légendaire capable de contrôler le feu. On raconte que lorsque ce Pokémon est blessé, il se baigne dans le magma en ébullition d'un volcan pour se soigner.",
+    "id_parent": null,
+    "image": "http://romainlambot.fr/pokemons/images/146.png",
+    "name": "Sulfura",
+    "type1": 7,
+    "type2": 18
+  },
+  {
+    "id_pokemon": 147,
+    "id_national": 147,
+    "description": "Minidraco mue constamment, renouvelant sans arrêt sa peau. En effet, l'énergie vitale de son corps augmente régulièrement et sa mue lui permet d'éviter d'atteindre des niveaux incontrôlables.",
+    "id_parent": null,
+    "image": "http://romainlambot.fr/pokemons/images/147.png",
+    "name": "Minidraco",
+    "type1": 3,
+    "type2": null
+  },
+  {
+    "id_pokemon": 148,
+    "id_national": 148,
+    "description": "Draco stocke une quantité d'énergie considérable dans son corps. On raconte qu'il peut modifier les conditions climatiques autour de lui en déchargeant l'énergie contenue dans les cristaux de son cou et de sa queue.",
+    "id_parent": 147,
+    "image": "http://romainlambot.fr/pokemons/images/148.png",
+    "name": "Draco",
+    "type1": 3,
+    "type2": null
+  },
+  {
+    "id_pokemon": 149,
+    "id_national": 149,
+    "description": "Dracolosse est capable de faire le tour de la planète en seize heures à peine. C'est un Pokémon au grand cœur qui ramène à bon port les navires perdus dans les tempêtes.",
+    "id_parent": 148,
+    "image": "http://romainlambot.fr/pokemons/images/149.png",
+    "name": "Dracolosse",
+    "type1": 3,
+    "type2": 18
+  },
+  {
+    "id_pokemon": 150,
+    "id_national": 150,
+    "description": "Mewtwo est un Pokémon créé par manipulation génétique. Cependant, bien que les connaissances scientifiques des humains aient réussi à créer son corps, elles n'ont pas pu doter Mewtwo d'un cœur sensible.",
+    "id_parent": null,
+    "image": "http://romainlambot.fr/pokemons/images/150.png",
+    "name": "Mewtwo",
+    "type1": 13,
+    "type2": null
+  },
+  {
+    "id_pokemon": 151,
+    "id_national": 151,
+    "description": "On dit que Mew possède le code génétique de tous les autres Pokémon. Il peut se rendre invisible à sa guise, ce qui lui permet de ne pas se faire remarquer quand il s'approche des gens.",
+    "id_parent": null,
+    "image": "http://romainlambot.fr/pokemons/images/151.png",
+    "name": "Mew",
+    "type1": 13,
+    "type2": null
+  }
+]

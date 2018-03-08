@@ -4,6 +4,7 @@ const logger = require("morgan");
 const bodyParser = require("body-parser");
 const DataBase = require("./db");
 const { devEnv } = require("./utils/consts");
+
 const swaggerUi = require("swagger-ui-express");
 const swaggerJSDoc = require("swagger-jsdoc");
 
@@ -35,7 +36,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use("/", require("./routes/index"));
-app.use("/pokemons", require("./routes/pokemons"));
+app.use("/pokemons", require("./api/routes/pokemonRoute"));
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
 // catch 404 and forward to error handler
