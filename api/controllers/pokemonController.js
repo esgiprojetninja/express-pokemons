@@ -1,24 +1,25 @@
-let mongoose = require('mongoose'),
-Pokemon = require('../models/Pokemon');
-attributesSelect = 'id_pokemon description name id_parent image id_national type1 type2';
+let mongoose = require("mongoose"),
+    Pokemon = require("../models/Pokemon"),
+    Location = require("../models/Location");
+attributesSelect = "id_pokemon description name id_parent image id_national type1 type2";
 
 /** list pokemons **/
 exports.list_all_pokemons = function(req, res) {
-    let query = Pokemon.find({}).select(attributesSelect).sort([['id_national', 'ascending']]);
+    let query = Pokemon.find({}).select(attributesSelect).sort([["id_national", "ascending"]]);
     query.exec(function (err, pokemons) {
         if (err) return res.status(500).send(err);
-        res.json(pokemons)
-    })
+        res.json(pokemons);
+    });
 };
 
 /** display pokemon **/
 exports.read_pokemon = function(req, res) {
-    let query = Pokemon.find({id_national: req.params.Id}).select(attributesSelect);
+    let query = Pokemon.find({ id_national: req.params.Id }).select(attributesSelect);
     query.exec(function (err, pokemons) {
         if (err)
-            res.send(err)
-        res.json(pokemons)
-    })
+            res.send(err);
+        res.json(pokemons);
+    });
 };
 
 /** create pokemon **/
@@ -33,7 +34,7 @@ exports.create_pokemon = function(req, res) {
 
 /** update pokemon **/
 exports.update_pokemon = function(req, res) {
-    Pokemon.findOneAndUpdate({id_national: req.params.Id}, req.body, {new: true}, function(err, pokemon) {
+    Pokemon.findOneAndUpdate({ id_national: req.params.Id }, req.body, { new: true }, function(err, pokemon) {
         if (err)
             res.send(err);
         res.json(pokemon);
@@ -47,6 +48,16 @@ exports.delete_pokemon = function(req, res) {
     }, function(err, pokemon) {
         if (err)
             res.send(err);
-        res.json({ message: 'Pokemon successfully deleted' });
+        res.json({ message: "Pokemon successfully deleted" });
+    });
+};
+
+/** add a location **/
+exports.set_location = function(req, res) {
+    let new_location = new Location(req.body);
+    new_location.save(function(err, location) {
+        if (err)
+            res.send(err);
+        res.json(location);
     });
 };
