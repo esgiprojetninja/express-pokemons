@@ -11,7 +11,7 @@ const swaggerJSDoc = require("swagger-jsdoc");
 const options = {
     swaggerDefinition: {
         info: {
-            title: "Hello World", // Title (required)
+            title: "Pokedex REST api", // Title (required)
             version: "1.0.0", // Version (required)
         },
     },
