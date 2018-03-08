@@ -11,5 +11,6 @@ router.put("/:Id", pokemon.update_pokemon);
 router.delete("/:Id", pokemon.delete_pokemon);
 
 router.post("/signal", pokemon.set_location);
+router.get("/marked", pokemon.get_marked);
 
 module.exports = router;
