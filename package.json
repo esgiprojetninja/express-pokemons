@@ -18,7 +18,9 @@
     "express": "~4.15.5",
     "mongoose": "^5.0.9",
     "morgan": "~1.9.0",
-    "serve-favicon": "~2.4.5"
+    "serve-favicon": "~2.4.5",
+    "swagger-jsdoc": "^1.9.7",
+    "swagger-ui-express": "^2.0.15"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.2",
