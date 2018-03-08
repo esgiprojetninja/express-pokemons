@@ -1,13 +1,13 @@
-module.exports = function(app) {
-    let pokemon = require('../controllers/pokemonController');
+const express = require("express");
+const router = express.Router();
 
-    app.route('/pokemons')
-        .get(pokemon.list_all_pokemons)
-        .post(pokemon.create_pokemon);
+let pokemon = require('../controllers/pokemonController');
 
+router.get('/pokemons', pokemon.list_all_pokemons);
+router.post('/pokemons', pokemon.create_pokemon);
 
-    app.route('/pokemon/:Number')
-        .get(pokemon.read_pokemon)
-        .put(pokemon.update_pokemon)
-        .delete(pokemon.delete_pokemon);
-};
+router.get('/pokemons/:Id', pokemon.read_pokemon);
+router.put('/pokemons/:Id', pokemon.update_pokemon);
+router.delete('/pokemons/:Id', pokemon.delete_pokemon);
+
+module.exports = router;

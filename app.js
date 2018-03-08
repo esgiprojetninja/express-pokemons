@@ -4,7 +4,6 @@ const logger = require("morgan");
 const bodyParser = require("body-parser");
 const DataBase = require("./db");
 const { devEnv } = require("./utils/consts");
-
 const app = express();
 DataBase.connect();
 
@@ -16,7 +15,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use("/", require("./routes/index"));
-app.use("/pokemons", require("./routes/pokemons"));
+app.use("/api", require('./api/routes/pokemonRoute'));
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
