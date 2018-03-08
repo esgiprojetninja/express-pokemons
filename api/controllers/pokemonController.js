@@ -50,7 +50,7 @@ exports.update_pokemon = async function(req, res) {
 /** delete pokemon **/
 exports.delete_pokemon = async function(req, res) {
     try {
-        let query = Pokemon.remove({ id_national: req.params.Id };
+        let query = Pokemon.remove({ id_national: req.params.Id });
         const pokemons = await query.exec();
         return res.json(pokemons);
     } catch (error) {
