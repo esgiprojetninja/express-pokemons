@@ -18,7 +18,7 @@ const options = {
     },
     apis: [
         "./routes/index.js",
-        "./routes/pokemons.js"
+        "./api/routes/pokemonRoute.js"
     ], // Path to the API docs
 };
 // Initialize swagger-jsdoc -> returns validated swagger spec in json format
