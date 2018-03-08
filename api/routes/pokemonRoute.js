@@ -45,6 +45,23 @@ router.get("/", pokemon.list_all_pokemons);
 
 /**
  * @swagger
+ * /pokemons/marked:
+ *   get:
+ *     description: Returns pokemons marked 
+ *     produces:
+ *      - application/json
+ *     responses:
+ *       200:
+ *         description: Returns a list of pokemon marked.
+ *         schema:
+ *           type: array
+ *           items:
+ *             $ref: '#/definitions/Pokemon'
+ */
+router.get("/marked", pokemon.get_marked);
+
+/**
+ * @swagger
  * /pokemons/:
  *   post:
  *     description: Creates a new pokemon.
@@ -145,6 +162,5 @@ router.put("/:Id", pokemon.update_pokemon);
 router.delete("/:Id", pokemon.delete_pokemon);
 
 router.post("/signal", pokemon.set_location);
-router.get("/marked", pokemon.get_marked);
 
 module.exports = router;

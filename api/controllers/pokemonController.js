@@ -73,7 +73,7 @@ exports.set_location = async function(req, res) {
 exports.get_marked = async function(req, res) {
     let datetime = new Date();
     try {
-        let query = Location.find({ where:{ $and:[{ date_created: { $lte: datetime } },{ date_created: { $gte: datetime } }] }, include: [Pokemon] }).select(attributesSelect);
+        let query = Location.find({ where:{ $and:[{ date_created: { $lte: this.datetime } },{ date_created: { $gte: this.datetime } }] }, include: [Pokemon] }).select(attributesSelect);
         const pokemons = await query.exec();
         return res.json(pokemons);
     } catch (error) {
