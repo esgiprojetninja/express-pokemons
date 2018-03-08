@@ -3,7 +3,7 @@ const { devEnv } = require("../utils/consts");
 
 const app = require("../app");
 
-const debug = require("debug")("koa-pokemon:server");
+const debug = require("debug")("express-pokemon:server");
 
 const port = normalizePort(process.env.PORT || "3000");
 app.set("port", port);
@@ -21,17 +21,17 @@ server.on("listening", onListening);
 
 function normalizePort(val) {
     const port = parseInt(val, 10);
-    
+
     if (isNaN(port)) {
         // named pipe
         return val;
     }
-    
+
     if (port >= 0) {
         // port number
         return port;
     }
-    
+
     return false;
 }
 
@@ -43,9 +43,9 @@ function onError(error) {
     if (error.syscall !== "listen") {
         throw error;
     }
-    
+
     const bind = typeof port === "string" ? `Pipe ${port}` : `Port ${port}`;
-    
+
     // handle specific listen errors with friendly messages
     switch (error.code) {
     case "EACCES":
