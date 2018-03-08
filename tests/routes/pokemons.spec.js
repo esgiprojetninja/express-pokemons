@@ -3,10 +3,14 @@ const chai = require("chai");
 const chaiHttp = require("chai-http");
 chai.use(chaiHttp);
 process.env.PORT = process.env.TEST_PORT || require("../../utils/consts").defaultTestPort;
-const server = require("../../bin/www");
+process.env.NODE_ENV = require("../../utils/consts").testEnv;
 const ROUTE_PREFIX = "pokemons";
 
 describe("GET /pokemons", () => {
+    let server = null;
+    beforeAll(() => {
+        server = require("../../bin/www");
+    });
     it("should return array", done => {
         chai.request(server)
             .get(`/${ROUTE_PREFIX}`)
