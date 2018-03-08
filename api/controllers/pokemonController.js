@@ -39,7 +39,7 @@ exports.create_pokemon = async function(req, res) {
 /** update pokemon **/
 exports.update_pokemon = async function(req, res) {
     try {
-        let query = Pokemon.findOneAndUpdate({ id_national: req.params.Id }, req.body, { new: true };
+        let query = Pokemon.findOneAndUpdate({ id_national: req.params.Id }, req.body, { new: true });
         const pokemons = await query.exec();
         return res.json(pokemons);
     } catch (error) {
