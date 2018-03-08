@@ -1,0 +1,77 @@
+[
+    {
+        "title": "bug",
+        "description": "Bug-type Pokémon are generally arthropod-like Pokémon, mostly insectoid and a few arachnids. These Pokémon commonly evolve at low levels and as such are ideal for the early stages of the games. Bug-type moves involve use of the bugs' body parts. Bug Pokémon are generally regarded as weak due to the first generation's Bug types having low stats and the first generation's Bug type moves being weak, but some can be quite powerful, like Heracross. Bug types are weak against Fire, Flying, and Rock types, yet are strong against Grass, Psychic, and Dark types.",
+        "color": "#A8B820"
+    },
+    {
+        "title": "dragon",
+        "description": "Dragon-type Pokémon are, quite simply, dragons. Their moves involve the use of claws and breath. They are one of only two types, the other being Ghost, to be Super Effective against its own type. Not all dragon-like Pokémon are Dragon-type Pokémon; for example, Charizard is a Fire/Flying type, Gyarados is a Water/Flying type, Lapras is a Water/Ice type, Aerodactyl is a Rock/Flying type, Steelix is a Steel/Ground type, Tyranitar is a Rock/Dark type, Sceptile is a pure Grass type, Aggron is a Steel/Rock type, and Milotic is pure Water type, but a select few are in the Dragon breeding group (Charizard, Milotic, Gyarados, and Sceptile), and some can Mega Evolve into a Dragon-type (Charizard, Ampharos, and Sceptile). ",
+        "color": "#7038F8"
+    },
+    {
+        "title": "ice",
+        "description": "Ice-type Pokémon are affiliated with cold things and areas. Ice-type Pokémon usually have a high Special Defense statistic and a low Defence statistic. Ice is an uncommon type, and rarely seen in single-type Pokémon, however Generation V Gym Leader Pryce used all pure Ice types for his team, in Generation V only one of the Ice Type Pokémon introduced wasn't pure Ice that being the legendary Kyurem. It is often paired with the Water-type. Examples of Ice-type Pokémon include Delibird, Jynx, Articuno, Spheal, Glalie, and Regice. Some of the most powerful Ice-type moves that Pokémon can learn are Blizzard, Sheer Cold, and Ice Beam. \n\rMany Ice-type attacks have a chance of Freezing the target, a status effect which prevents the frozen Pokémon from moving until it is thawed. Ice-type Pokémon cannot be Frozen (except by effects of Tri-Attack). ",
+        "color": "#98D8D8"
+    },
+    {
+        "title": "fighting",
+        "description": "Fighting-type Pokémon learn specifically labelled fighting melee attacks, such as punches and kicks. Examples include Hitmonlee, Hitmonchan, Hitmontop, Lucario, Hariyama, Mankey, and Machoke. Some Fighting-type moves that Pokémon can learn are Seismic Toss, Hi Jump Kick, and DynamicPunch. Fire-type Pokémon are aligned with heat, often in the form of flames or lava. Examples include Vulpix, Magmar, Charmander, Cyndaquil, Torkoal, Moltres, Torchic, Entei, and Chimchar.Fire-type attacks may cause a Burn, a status effect which causes a reduction in the victim's Attack statistic as well as reducing hit points each turn. Fire-type Pokémon are immune to the Burn status effect (unless caused by Tri Attack). Some Fire-type moves that Pokémon can learn are Fire Spin, Fire Blast, and Flamethrower. ",
+        "color": "#C03028"
+    },
+    {
+        "title": "fire",
+        "description": "Ice-type Pokémon are affiliated with cold things and areas. Ice-type Pokémon usually have a high Special Defense statistic and a low Defence statistic. Ice is an uncommon type, and rarely seen in single-type Pokémon, however Generation V Gym Leader Pryce used all pure Ice types for his team, in Generation V only one of the Ice Type Pokémon introduced wasn't pure Ice that being the legendary Kyurem. It is often paired with the Water-type. Examples of Ice-type Pokémon include Delibird, Jynx, Articuno, Spheal, Glalie, and Regice. Some of the most powerful Ice-type moves that Pokémon can learn are Blizzard, Sheer Cold, and Ice Beam. \n\rMany Ice-type attacks have a chance of Freezing the target, a status effect which prevents the frozen Pokémon from moving until it is thawed. Ice-type Pokémon cannot be Frozen (except by effects of Tri-Attack). ",
+        "color": "#F08030"
+    },
+    {
+        "title": "flying",
+        "description": "Flying-type Pokémon are Pokémon that fly or resemble birds. They are normally bird-like or dragon-like Pokémon, but there are exceptions, such as the Sea serpent-like Water- and Flying-type Gyarados. The Flying-type has never been any species's sole type - except for Tornadus, and Arceus when holding the Sky Plate. Most Flying-type Pokémon are dual-types, most of the common ones being dual Normal- and Flying-type. Examples include Pidgey, Fearow, Doduo, Noctowl, Swellow, and Farfetch'd.",
+        "color": "#A890F0"
+    },
+    {
+        "title": "grass",
+        "description": "Grass-type Pokémon have abilities and appearances associated with plant life and nature. They use many HP-recovery techniques and moves which cause various status effects to their advantage. Until the Gold and Silver versions, over half of the Grass-type Pokémon were dual-type with Poison, negating the Grass-type's resistance to Ground-type attacks. In fact, in the first generation of Pokémon, there was just one that was purely grass - Tangela. Even in later games, many Grass-type Pokémon have a second type. An inexpert eye may think the Grass type is badly balanced in terms of weaknesses and advantages, yet more experienced players will know the advantages of Grass type are vital for being strong against some of the most common or hard to damage types. Examples of Grass-types include Bulbasaur, Tropius, Meganium, Treecko, Celebi, Hoppip, and Sunkern. Some Grass-type moves that Pokémon can learn are Vine Whip, Bullet Seed, and Sleep Powder.",
+        "color": "#78C850"
+    },
+    {
+        "title": "ghost",
+        "description": "Ghost-type Pokémon relate to the supernatural, specifically the realm of the dead. Their paranormal powers often cause status effects to cripple their foes. Ghost is one of two types, the other being Dragon, to be Super Effective against its own type. Examples of the Ghost-type include Duskull, Gastly, Sableye, Shedinja, Banette, and Misdreavus. Some Ghost-type moves that Pokémon can learn are Lick, Shadow Ball, Night Shade, and Confuse Ray. In the first generation, there were only 3 ghost type Pokémon - and none of them were pure ghost type. Psychic types actually had the advantage over ghost types because those 3 Pokémon (Gastly, Haunter and Gengar) were also poison types. In addition to that, while the Psychic-type Pokémon were supposed to be weak against Ghost-type attacks, the only attack that did a non-set amount of damage, Lick, could not affect Psychic Pokémon. This problem was fixed in later generations. The two exceptions to Normal-type Pokémon's immunity to Ghost-type attacks are the moves Confuse Ray and Nightmare. Also, Normal- and Fighting-type attacks can hit Ghost-types if a move like Foresight or Odor Sleuth is used beforehand.",
+        "color": "#705898"
+    },
+    {
+        "title": "ground",
+        "description": "Ground-type Pokémon are tough Pokémon affiliated with the soil. They seem to be the second most common type. Examples include Dugtrio, Sandshrew, Marshtomp, Trapinch, and Groudon. Some Ground-type moves that Pokémon can learn are Mud Sport(which seems somewhat unnecessary as ground types are immune to electric moves),Mud Shot, Earthquake, and Dig. Ground-type Pokémon are the best Pokémon to use against the Electric type, given that they are completely immune to Electric moves while being the only type whose moves are super effective against Electric types. They commonly live in dry areas, (apart from those who are dual Water and Ground types such as Quagsire and Swampert) and some even live in deserts such as Sandshrew and Trapinch.",
+        "color": "#E0C068"
+    },
+    {
+        "title": "electric",
+        "description": "Electric-type Pokémon have electricity-oriented powers. Electric types often have a high speed status, a respectable Special Attack, and a decent Special Defense. Electric types are also noted for very few weaknesses-Although the 1 weakness they have is possibly the 2nd most common. Some examples include Pikachu, Elekid, Raichu, Manectric, Ampharos, Raikou, Plusle, Minun, and Electrode. \n\rMany Electric-type attacks have a chance of causing Paralysis, a status effect which severely reduces the affected Pokémon's Speed, and means a 25% chance of being unable to move each turn. Some Electric-type moves that Pokémon can learn are ThunderShock, Shock Wave, and Spark. ",
+        "color": "#F8D030"
+    },
+    {
+        "title": "normal",
+        "description": "Normal-type Pokémon have moves based on standard attacks, such as tackles and scratches, and do not generally have any of the characteristics assigned to the other types, except in the case of dual-typed Normal-type Pokémon. As such, Normal could be considered the \"default\" type, encompassing the Pokémon which do not fit into the other types. Normal types are also usually mammals or fairy like creatures, but are nearly always adorable and cute. Examples include Munchlax, Teddiursa, Skitty, Chansey, Azurill, and Ditto. Especially unusual Pokémon, such as Porygon, also are usually Normal-type. Normal-type Pokémon are unusual in that unlike other types, they can usually learn a wide variety of attcks that are not their own type (i.e. Chansey can learn Thunderbolt, Flamethrower, and Solar Beam). Normal-type attacks are not particularly effective against any type (the only Normal-type move that is ever super-effective is Hidden Power), but as a counter, only a few types have resistance to Normal-type attack. Some of the most powerful Normal-type moves Pokémon can learn are Tri Attack, Hyper Beam, Double-Edge.",
+        "color": "#A8A878"
+    },
+    {
+        "title": "poison",
+        "description": "Poison-type Pokémon have some toxic quality about them. Some produce venom (Ekans and Seviper for example), some are poisonous plants (Bulbasaur and Oddish – these are dual Grass and Poison types), and some are composed of or emit toxic chemicals (such as Koffing or Grimer).\n\rMany Poison-type moves can cause the Poison status effect, which causes the victim to lose hit points after each turn. The ability \"Poison Point\" may inflict poison when physical attacks are used. The moves Toxic and \"Poison Fang\" can even cause a target to become \"badly poisoned\", in which case the amount of damage done by the toxins increases each turn. Other examples include Weezing, Haunter, Gloom, and Vileplume. Some powerful Poison-type moves include Toxic, Poison Tail, and Sludge Bomb.\n\rPoison and Steel-type Pokémon are immune to being Poisoned (except by Twineedle effects); this power is shared as well by any Pokémon with the Special Ability \"Immunity\".",
+        "color": "#A040A0"
+    },
+    {
+        "title": "psychic",
+        "description": "Psychic-type Pokémon generally have mental abilities associated with psychics, such as telekinesis, telepathy, and prescience. Psychic Pokémon generally have high Special (Red, Blue, and Yellow) or Special Attack (Gold, Silver and after) statistics. Examples include Alakazam, Chimecho, Espeon, Gardevoir, Mr. Mime, Jynx, Starmie and Mewtwo. Psychic types are also among the smartest Pokémon, often capable of speaking in human languages either directly or through telepathy. They are favored by the fandom as Psychic types generally can learn an incredibly wide variety of moves. Many Psychic Pokémon can also learn the recovery move Recover and can learn many moves that increase their stats, such as Calm Mind. Some powerful Psychic-type moves are Psybeam, Psycho Cut, and Psychic. It is also noteworthy that the most difficult to acquire of the legendary Pokémon from each generation - Mewtwo, Mew, Celebi, Jirachi, and Deoxys - are all Psychic-types.",
+        "color": "#F85888"
+    },
+    {
+        "title": "rock",
+        "description": "Rock-type Pokémon are affiliated with rocks and mountains. Examples include Onix, Geodude, Corsola, Golem, and Sudowoodo.\n\rRock-type Pokémon should not be confused with Ground-type Pokémon. Rock-types attack by throwing or breaking rocks, while Ground-type attacks deal specifically with the ground itself, particularly soil. However, many Rock-type Pokémon are dual Rock- and Ground-types. Some powerful Rock-type moves are Rock Throw, Rock Slide, and AncientPower. Rock is also the most balanced type. Pure rock types include Nosepass, Sudowoodo, Bonsly, and Regirock, other rock types include the fossil Pokémon such as Omanyte, Kabuto and Aerodactyl and other duel Rock/other type Pokémon such as Onix. ",
+        "color": "#B8A038"
+    },
+    {
+        "title": "water",
+        "description": "Water-type Pokémon are based on aquatic creatures, and their powers are directly related to water. Of all the types, this one has the most species attributed to it with over 100 as of Generation V. Examples of Water-Type Pokémon include Squirtle, Totodile, Mudkip, Corsola, Slowking, Staryu, Psyduck, Remoraid, Vaporeon, Seaking, Magikarp, and Kyogre.",
+        "color": "#6890F0"
+    }
+]

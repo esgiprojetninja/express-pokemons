@@ -2,6 +2,7 @@ require("dotenv").config({ path: "./.env.local" });
 const mongoose = require("mongoose");
 const globals = require("../utils/consts");
 const pokemon = require("./schema/pokemon");
+const type = require("./schema/type");
 
 const isConnectionEstablished = () => mongoose.connection && mongoose.connection.host && mongoose.connection.port;
 
@@ -20,6 +21,7 @@ const connect = () => {
         console.warn("Mongoose connected !");
         if (process.env.NODE_ENV === globals.devEnv) {
             pokemon.reset();
+            type.reset();
         }
     });
 };

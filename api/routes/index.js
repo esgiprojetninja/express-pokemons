@@ -1,3 +1,8 @@
-module.exports = router => {
-    router.prefix("/v1");
-};
+const express = require("express");
+const router = express.Router();
+
+router.get("/", (req, res) => {
+    res.send({ coucou: "coucou" });
+});
+
+module.exports = router;

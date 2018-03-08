@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const Pokemon = require("../models/Pokemon");
 const Location = require("../models/Location");
-attributesSelect = "id_pokemon description name id_parent image id_national type1 type2";
+const attributesSelect = "id_pokemon description name id_parent image id_national type1 type2";
 
 /** list pokemons **/
 exports.list_all_pokemons = async function(req, res) {
