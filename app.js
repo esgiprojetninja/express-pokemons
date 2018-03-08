@@ -1,5 +1,6 @@
 require("dotenv").config({ path: "./.env.local" });
 const express = require("express");
+const cors = require("cors");
 const logger = require("morgan");
 const bodyParser = require("body-parser");
 const DataBase = require("./db");
@@ -9,7 +10,7 @@ const swaggerUi = require("swagger-ui-express");
 const swaggerJSDoc = require("swagger-jsdoc");
 
 /* Swagger config */
-const options = {
+const swaggerOptions = {
     swaggerDefinition: {
         info: {
             title: "Pokedex REST api", // Title (required)
@@ -22,8 +23,13 @@ const options = {
     ], // Path to the API docs
 };
 // Initialize swagger-jsdoc -> returns validated swagger spec in json format
-const swaggerSpec = swaggerJSDoc(options);
+const swaggerSpec = swaggerJSDoc(swaggerOptions);
 /* End Swagger config */
+
+const corsOptions = {
+    origin: "*",
+    optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204 
+};
 
 const app = express();
 DataBase.connect();
@@ -32,6 +38,7 @@ if ( process.env.NODE_ENV === devEnv ) {
     app.use(logger("dev"));
 }
 
+app.use(cors(corsOptions));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
