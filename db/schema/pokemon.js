@@ -39,21 +39,11 @@ const _createCollection = () => {
 
 const seed = () => {
 
-    pokemonData = JSON.parse(fs.readFileSync("pokemon_data.json", "utf8"));
-    
-    for (item in pokemonData) {
-        const todo = new COLLECTION({
-            name: pokemonData[item].name,
-            description: pokemonData[item].description,
-            id_parent: pokemonData[item].id_parent,
-            image: pokemonData[item].image,
-            id_national: pokemonData[item].id_national,
-            type1: pokemonData[item].type1,
-            type2: pokemonData[item].type2
-        });
+    JSON.parse(fs.readFileSync("pokemon_data.json", "utf8")).forEach((poke) => {
+        const todo = new COLLECTION({ ...poke });
         todo.save();
-    }
-        
+    });
+
     console.warn(`Populated ${COLLECTION_NAME} Collection`);
 };
 
