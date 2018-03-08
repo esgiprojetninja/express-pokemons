@@ -14,6 +14,7 @@
   "dependencies": {
     "body-parser": "~1.18.2",
     "cors": "^2.8.4",
+    "chai-spies": "^1.0.0",
     "debug": "~2.6.9",
     "dotenv": "^5.0.1",
     "eslint": "^4.18.2",
