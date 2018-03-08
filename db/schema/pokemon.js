@@ -3,32 +3,32 @@ const { Schema } = mongoose;
 const COLLECTION_NAME = "Pokemon";
 const SEED_NUMBER = 10;
 let COLLECTION = null;
-const fs = require('fs');
+const fs = require("fs");
 
 const _emptyCollection = callback => {
     const name = `${COLLECTION_NAME.toLowerCase()}s`;
-        mongoose.connection.db.listCollections({ name })
-            .next((err, collinfo) => {
-                if (err) {
-                    console.error(`Failed to delete ${COLLECTION_NAME} model`, err);
-                    return;
-                }
-                if (collinfo) {
-                    mongoose.connection.db.dropCollection(name, (err) => { 
-                        if (err) {
-                            console.error(`Failed to delete ${COLLECTION_NAME} model`, err);
-                            return;
-                        }
-                        console.warn(`Removed ${COLLECTION_NAME} Collection`);
-                        if (callback && typeof callback === "function") {
-                            callback();
-                        }
+    mongoose.connection.db.listCollections({ name })
+        .next((err, collinfo) => {
+            if (err) {
+                console.error(`Failed to delete ${COLLECTION_NAME} model`, err);
+                return;
+            }
+            if (collinfo) {
+                mongoose.connection.db.dropCollection(name, (err) => { 
+                    if (err) {
+                        console.error(`Failed to delete ${COLLECTION_NAME} model`, err);
                         return;
-                    });
-                } else {
-                    callback();
-                }
-            });
+                    }
+                    console.warn(`Removed ${COLLECTION_NAME} Collection`);
+                    if (callback && typeof callback === "function") {
+                        callback();
+                    }
+                    return;
+                });
+            } else {
+                callback();
+            }
+        });
   
 };
 
@@ -59,6 +59,9 @@ const seed = () => {
 
 module.exports = {
     reset() {
+        if ( process.env.NODE_ENV === require("../../utils/consts").testEnv) {
+            return;
+        }
         _emptyCollection(() => {
             _createCollection();
             seed();
