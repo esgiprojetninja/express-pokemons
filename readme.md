@@ -1,4 +1,9 @@
-# Koa Todos API
+# Express Pokemon API
+
+[![Build Status](https://travis-ci.org/esgiprojetninja/express-pokemons.svg?branch=master)](https://travis-ci.org/esgiprojetninja/express-pokemons)
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/fd66d11196ca4ec8826ce52f32e6df4e)](https://app.codacy.com/app/dydyFos/express-pokemons?utm_source=github.com&utm_medium=referral&utm_content=esgiprojetninja/express-pokemons&utm_campaign=badger)
+
 
 Based on http://expressjs.com
 
