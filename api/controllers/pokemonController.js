@@ -52,7 +52,7 @@ exports.delete_pokemon = async function(req, res) {
     try {
         let query = Pokemon.remove({ id_national: req.params.Id });
         const pokemons = await query.exec();
-        return res.json(pokemons);
+        return res.json(true);
     } catch (error) {
         return res.status(500).send(error);
     }
