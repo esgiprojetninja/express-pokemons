@@ -8,7 +8,6 @@ chai.use(chaiHttp);
 chai.use(spies);
 process.env.PORT = process.env.TEST_PORT || require("../../utils/consts").defaultTestPort;
 process.env.NODE_ENV = require("../../utils/consts").testEnv;
-const ROUTE_PREFIX = "types";
 
 chai.spy.on(TypeController, "listAllTypes", (req, res) => res.json([]));
 

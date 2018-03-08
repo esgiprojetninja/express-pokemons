@@ -1,7 +1,5 @@
-const mongoose = require("mongoose");
 const fs = require("fs");
 const { emptyCollection, createCollection } = require("../utils/collectionTools");
-const { Schema } = mongoose;
 const COLLECTION_NAME = "Pokemon";
 let COLLECTION = null;
 

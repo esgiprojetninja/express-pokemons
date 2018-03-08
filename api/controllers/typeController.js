@@ -1,4 +1,3 @@
-const mongoose = require("mongoose");
 const Type = require("../models/Type");
 const SELECT_ATTRIBUTES = "id title description color";
 
