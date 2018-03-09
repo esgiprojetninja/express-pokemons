@@ -92,6 +92,29 @@ router.get("/:Id", pokemon.read_pokemon);
 
 /**
  * @swagger
+ * /pokemons/{id}/canHaveParent:
+ *   get:
+ *     description: Returns false or true if pokemon can have a parent.
+ *     produces:
+ *      - application/json
+ *     parameters:
+ *      - name: id
+ *        description: The id of the pokemon.
+ *        in: path
+ *        required: true
+ *        type: number
+ *     responses:
+ *       200:
+ *         description: Return false or true.
+ *         schema:
+ *           type: object
+ *           items:
+ *             $ref: '#/definitions/Pokemon'
+ */
+router.get("/:Id/canHaveParent", pokemon.can_have_parent);
+
+/**
+ * @swagger
  * /pokemons/{id}:
  *   put:
  *     description: Updates a specific pokemon.
