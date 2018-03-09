@@ -12,17 +12,19 @@ Based on http://expressjs.com
 - docker
 ```sh
     docker pull mongo
-    docker run --name koa-todos-db -d mongo
+    docker run --name express-pokemons-db -d mongo
 ```
 - Paste the docker's IPAddress in your env.local . You can find this address by typing 
 ```sh
-    docker inspect koa-todos-db
+    docker inspect express-pokemons-db
 ```
 
 ```sh
     npm install
     npm run serve
 ```
+
+- Make sure you create your .env.local following the .env.sample
 
 ## Requirements 
 - unit tests
