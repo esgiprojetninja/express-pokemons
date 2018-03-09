@@ -28,7 +28,7 @@ router.use(tokenUtils.checkToken);
 
 /**
  * @swagger
- * /auth/:
+ * /users/:
  *   get:
  *     description: Returns users.
  *     produces:
@@ -42,31 +42,6 @@ router.use(tokenUtils.checkToken);
  *             $ref: '#/definitions/User'
  */
 router.get("/", UserController.list_all_users);
-
-/**
- * @swagger
- * /auth/:
- *   post:
- *     description: Creates a new user.
- *     produces:
- *      - application/json
- *     parameters:
- *      - name: user
- *        description: The user to create.
- *        in: body
- *        required: true
- *        type: string
- *        schema:
- *          '#/definitions/User'
- *     responses:
- *       200:
- *         description: User created.
- *         schema:
- *           type: object
- *           items:
- *             $ref: '#/definitions/User'
- */
-router.post("/", UserController.create_user);
 
 /**
  * @swagger

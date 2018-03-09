@@ -4,7 +4,7 @@ const UserController = require("../controllers/userController");
 
 /**
  * @swagger
- * /users/login:
+ * /auth/login:
  *   delete:
  *     description: Logs a user in.
  *     produces:
@@ -25,7 +25,7 @@ router.post("/login", UserController.log_user_in);
 
 /**
  * @swagger
- * /users/:
+ * /auth/:
  *   post:
  *     description: Creates a new user.
  *     produces:
