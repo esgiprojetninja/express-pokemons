@@ -1,0 +1,88 @@
+const User = require("../models/User");
+const attributesSelect = "id email name pokemons";
+
+/**
+ * List all users.
+ * @param {*} req
+ * @param {*} res
+ * @returns {*} res
+ */
+exports.list_all_users = async function(req, res) {
+    try {
+        let query = User.find({}).select(attributesSelect).sort([["_id", "ascending"]]);
+        const users = await query.exec();
+        return res.json(users);
+    } catch (error) {
+        return res.status(500).send(error);
+    }
+};
+
+/**
+ * Reads a specific user
+ * @param {*} req
+ * @param {*} res
+ * @returns {*} res
+ */
+exports.read_user = async function(req, res) {
+    try {
+        let query = User.find({ _id: req.params.Id }).select(attributesSelect);
+        const user = await query.exec();
+        return res.json(user);
+    } catch (error) {
+        return res.status(500).send(error);
+    }
+};
+
+/**
+ * Validates & save a user.
+ * @param {*} req
+ * @param {*} res
+ * @returns {*} res
+ */
+exports.create_user = async function(req, res) {
+    const { email, password } = req.body;
+    if (!email || !/(.+)@(.+){2,}\.(.+){2,}/.test(email)) {
+        return res.status(400).send("Email must be valid");
+    }
+    if (!password || password.length < 9) {
+        return res.status(401).send("Password should contain at least 8 characters");
+    }
+    try {
+        let userToSave = new User(req.body);
+        const user = await userToSave.save();
+        return res.json(user);
+    } catch (error) {
+        return res.status(500).send(error);
+    }
+};
+
+/**
+ * Updates a specific user.
+ * @param {*} req
+ * @param {*} res
+ * @returns {*} res
+ */
+exports.update_user = async function(req, res) {
+    try {
+        let query = User.findOneAndUpdate({ _id: req.params.Id }, req.body, { new: true });
+        const pokemons = await query.exec();
+        return res.json(pokemons);
+    } catch (error) {
+        return res.status(500).send(error);
+    }
+};
+
+/**
+ * Deletes a specific user.
+ * @param {*} req
+ * @param {*} res
+ */
+exports.delete_user = async function(req, res) {
+    try {
+        let query = User.remove({ _id: req.params.Id });
+        await query.exec();
+        return res.json(true);
+    } catch (error) {
+        return res.status(500).send(error);
+    }
+};
