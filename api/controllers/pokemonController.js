@@ -60,10 +60,20 @@ exports.delete_pokemon = async function(req, res) {
 /** know if pokemon can have a parent **/
 exports.can_have_parent = async function(req, res) {
     try {
-        let query = Pokemon.findOne({ id_parent: req.params.Id }).select(attributesSelect);
-        const pokemon = await query.exec();
-        if (pokemon)
+        let query = Pokemon.findOne({ id_parent: req.params.Id }).select("id_parent");
+        let pokemon = await query.exec();
+        if (pokemon) { // Si le pokemon a un parent
             return res.json("false");
+        }
+        query = Pokemon.findOne({ id_national: req.params.Id }).select("id_parent");
+        let secondPokemon = await query.exec();
+        if(secondPokemon.id_parent != null) { // S'il existe un pokemon avant celui ci
+            query = Pokemon.findOne({ id_national: secondPokemon.id_parent }).select("id_parent");
+            let thirdPokemon = await query.exec();
+            if(thirdPokemon.id_parent != null ){ // S'il existe un deuxieme pokemon avant celui ci
+                return res.json("false");
+            }
+        }
         return res.json("true");
     } catch (error) {
         return res.status(500).send(error);
