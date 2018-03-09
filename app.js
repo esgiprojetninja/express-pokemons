@@ -6,7 +6,8 @@ const logger = require("morgan");
 const bodyParser = require("body-parser");
 
 const DataBase = require("./db");
-const { devEnv } = require("./utils/consts");
+const { devEnv, testEnv } = require("./utils/consts");
+const tokenUtils = require("./utils/token");
 
 const swaggerUi = require("swagger-ui-express");
 const swaggerJSDoc = require("swagger-jsdoc");
@@ -57,6 +58,11 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use("/auth", require("./api/routes/authRoutes"));
+
+if (process.env.NODE_ENV !== testEnv) {
+    app.use(tokenUtils.checkToken);
+}
+
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 app.use("/", require("./api/routes/index"));
 app.use("/pokemons", require("./api/routes/pokemonRoute"));

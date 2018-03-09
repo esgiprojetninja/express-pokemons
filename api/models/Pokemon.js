@@ -1,8 +1,6 @@
 const mongoose = require("mongoose");
-const Schema = mongoose.Schema;
 
 const pokemonSchema = new mongoose.Schema({
-    _id: Schema.Types.ObjectId,
     name: {
         type: String
     },

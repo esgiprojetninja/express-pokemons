@@ -1,10 +1,7 @@
 const express = require("express");
 const router = express.Router();
 
-const tokenUtils = require("../../utils/token");
 const pokemon = require("../controllers/pokemonController");
-
-router.use(tokenUtils.checkToken);
 
 /**
  * @swagger
