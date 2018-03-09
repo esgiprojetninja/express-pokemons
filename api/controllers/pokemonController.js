@@ -80,6 +80,37 @@ exports.can_have_parent = async function(req, res) {
     }
 };
 
+/** get all pokemon which can evolve **/
+exports.get_dispo_for_evolve = async function(req, res) {
+    try {
+        const queryFindById = Pokemon.findOne({ id_national: req.params.Id }).select(attributesSelect);
+        const pokemonFindById = await queryFindById.exec();
+        const queryAllPokemons = Pokemon.find({}).select("id_national name id_parent").sort([["id_national", "ascending"]]);
+        const allPokemons = await queryAllPokemons.exec();
+        const possibleParentsToAll = [];
+        allPokemons.forEach(pokemon => {
+            // checker s'il n'a pas de parent
+            if(pokemon.id_parent) {
+                return;
+            }
+
+            // checker si il a un parent
+            if (pokemon.id_parent) {
+                const parentPokemon = allPokemons.find(poke => poke.id_national === pokemon.id_parent);
+                if(parentPokemon.id_parent) {
+                    return;
+                }
+            }
+            // check si l'id recu a des enfants
+            // oui: 
+
+        });
+        return res.json(possibleParentsToAll);
+    } catch (error) {
+        return res.status(500).send(error);
+    }
+};
+
 /** add a location **/
 exports.set_location = async function(req, res) {
     try {

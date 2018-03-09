@@ -115,6 +115,29 @@ router.get("/:Id/canHaveParent", pokemon.can_have_parent);
 
 /**
  * @swagger
+ * /pokemons/{id}/dispoForEvolve:
+ *   get:
+ *     description: Returns all pokemons who can evolve
+ *     produces:
+ *      - application/json
+ *     parameters:
+ *      - name: id
+ *        description: The id of the pokemon.
+ *        in: path
+ *        required: true
+ *        type: number
+ *     responses:
+ *       200:
+ *         description: Return an array with all pokemons who can evolve.
+ *         schema:
+ *           type: object
+ *           items:
+ *             $ref: '#/definitions/Pokemon'
+ */
+router.get("/:Id/dispoForEvolve", pokemon.get_dispo_for_evolve);
+
+/**
+ * @swagger
  * /pokemons/{id}:
  *   put:
  *     description: Updates a specific pokemon.
