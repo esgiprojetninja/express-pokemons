@@ -1,7 +1,8 @@
 const mongoose = require("mongoose");
-const { getCollectionName } = require("../../db/schema/pokemon");
+const Schema = mongoose.Schema;
 
 const pokemonSchema = new mongoose.Schema({
+    _id: Schema.Types.ObjectId,
     name: {
         type: String
     },
@@ -25,4 +26,4 @@ const pokemonSchema = new mongoose.Schema({
     }
 });
 
-module.exports = mongoose.model(getCollectionName(), pokemonSchema);
+module.exports = mongoose.model("Pokemon", pokemonSchema);

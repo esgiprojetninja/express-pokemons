@@ -11,7 +11,10 @@ const attributesSelect = "id email name pokemons";
  */
 exports.list_all_users = async function(req, res) {
     try {
-        let query = User.find({}).select(attributesSelect).sort([["_id", "ascending"]]);
+        let query = User
+            .find({})
+            .select(attributesSelect)
+            .sort([["_id", "ascending"]]);
         const users = await query.exec();
         return res.json(users);
     } catch (error) {
@@ -27,7 +30,9 @@ exports.list_all_users = async function(req, res) {
  */
 exports.read_user = async function(req, res) {
     try {
-        let query = User.find({ _id: req.params.Id }).select(attributesSelect);
+        let query = User
+            .findOne({ _id: req.params.Id })
+            .select(attributesSelect)
         const user = await query.exec();
         return res.json(user);
     } catch (error) {
