@@ -32,7 +32,7 @@ exports.read_user = async function(req, res) {
     try {
         let query = User
             .findOne({ _id: req.params.Id })
-            .select(attributesSelect)
+            .select(attributesSelect);
         const user = await query.exec();
         return res.json(user);
     } catch (error) {

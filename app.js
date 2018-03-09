@@ -58,12 +58,12 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use("/auth", require("./api/routes/authRoutes"));
+app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
 if (process.env.NODE_ENV !== testEnv) {
     app.use(tokenUtils.checkToken);
 }
 
-app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 app.use("/", require("./api/routes/index"));
 app.use("/pokemons", require("./api/routes/pokemonRoute"));
 app.use("/types", require("./api/routes/typeRoute"));
