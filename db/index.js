@@ -19,7 +19,7 @@ const connect = () => {
     db.on("error", console.error.bind(console, "DB Connection error:: "));
     db.once("open", () => {
         console.warn("Mongoose connected !");
-        if (process.env.NODE_ENV === globals.devEnv) {
+        if (process.env.NODE_ENV !== globals.testEnv) {
             pokemon.reset();
             type.reset();
         }
