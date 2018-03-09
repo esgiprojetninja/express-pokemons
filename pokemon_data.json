@@ -13,7 +13,7 @@
     "id_pokemon": 2,
     "id_national": 2,
     "description": "Un bourgeon a poussé sur le dos de ce Pokémon. Pour en supporter le poids, Herbizarre a dû se muscler les pattes. Lorsqu'il commence à se prélasser au soleil, ça signifie que son bourgeon va éclore, donnant naissance à une fleur.",
-    "id_parent": 0,
+    "id_parent": 1,
     "image": "http://romainlambot.fr/pokemons/images/2.png",
     "name": "Herbizarre",
     "type1": 11,

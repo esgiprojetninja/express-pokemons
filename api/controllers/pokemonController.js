@@ -67,3 +67,6 @@ exports.set_location = async function(req, res) {
         return res.status(500).send(error);
     }
 };
+
+/** list marked pokemons **/
+exports.list_marked_pokemons = () => ([]);

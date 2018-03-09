@@ -25,7 +25,6 @@ const pokemon = require("../controllers/pokemonController");
  *         type: integer
  */
 
-
 /**
  * @swagger
  * /pokemons/:
@@ -145,5 +144,7 @@ router.put("/:Id", pokemon.update_pokemon);
 router.delete("/:Id", pokemon.delete_pokemon);
 
 router.post("/signal", pokemon.set_location);
+
+router.get("/marked", pokemon.list_marked_pokemons);
 
 module.exports = router;
