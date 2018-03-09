@@ -57,6 +57,19 @@ exports.delete_pokemon = async function(req, res) {
     }
 };
 
+/** know if pokemon can have a parent **/
+exports.can_have_parent = async function(req, res) {
+    try {
+        let query = Pokemon.findOne({ id_parent: req.params.Id }).select(attributesSelect);
+        const pokemon = await query.exec();
+        if (pokemon)
+            return res.json("false");
+        return res.json("true");
+    } catch (error) {
+        return res.status(500).send(error);
+    }
+};
+
 /** add a location **/
 exports.set_location = async function(req, res) {
     try {
