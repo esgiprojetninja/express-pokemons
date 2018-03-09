@@ -49,11 +49,11 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use("/auth", require("./api/routes/authRoutes"));
+app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 app.use("/", require("./api/routes/index"));
 app.use("/pokemons", require("./api/routes/pokemonRoute"));
 app.use("/types", require("./api/routes/typeRoute"));
 app.use("/users", require("./api/routes/userRoute"));
-app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
