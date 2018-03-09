@@ -1,4 +1,5 @@
 const jwt = require("jsonwebtoken");
+const _ = require("lodash");
 const User = require("../models/User");
 const attributesSelect = "id email name pokemons";
 
@@ -114,6 +115,19 @@ exports.log_user_in = async function(req, res) {
             message: "Login success",
             token: token
         });
+    } catch (error) {
+        return res.status(500).send(error);
+    }
+};
+
+exports.capture_pokemons = async function (req, res) {
+    const { pokemons } = req.body;
+    try {
+        let userQuery = User.findById(req.session.userId);
+        const user = await userQuery.exec();
+        user.pokemons = _.merge(user.pokemons, pokemons).filter(p => p !== null);
+        await user.save();
+        res.json(user);
     } catch (error) {
         return res.status(500).send(error);
     }

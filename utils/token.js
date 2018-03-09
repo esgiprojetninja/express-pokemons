@@ -13,7 +13,8 @@ exports.checkToken = (req, res, next) => {
 
     if (token) {
         try {
-            jwt.verify(token, process.env.SECRET);
+            const decoded = jwt.verify(token, process.env.SECRET);
+            req.session.userId = decoded.data;
             next();
         } catch(err) {
             return res.status(403).send("Unauthorized");

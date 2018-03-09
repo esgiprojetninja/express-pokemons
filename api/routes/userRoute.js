@@ -115,4 +115,34 @@ router.put("/:Id", UserController.update_user);
  */
 router.delete("/:Id", UserController.delete_user);
 
+/**
+ * @swagger
+ * /users/capture_pokemons/{id}:
+ *   put:
+ *     description: Adds pokemons to a user.
+ *     produces:
+ *      - application/json
+ *     parameters:
+ *      - name: pokemons
+ *        description: The ids of the pokemons to be added.
+ *        in: body
+ *        required: true
+ *        type: integer
+ *      - name: id
+ *        description: The user to update.
+ *        in: path
+ *        required: true
+ *        type: string
+ *        schema:
+ *          '#/definitions/User'
+ *     responses:
+ *       200:
+ *         description: User updated.
+ *         schema:
+ *           type: object
+ *           items:
+ *             $ref: '#/definitions/User'
+ */
+router.put("/capture_pokemons/:Id", UserController.capture_pokemons);
+
 module.exports = router;

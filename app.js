@@ -1,6 +1,7 @@
 require("dotenv").config({ path: "./.env.local" });
 const express = require("express");
 const cors = require("cors");
+const session = require("express-session");
 const logger = require("morgan");
 const bodyParser = require("body-parser");
 
@@ -23,7 +24,7 @@ const swaggerOptions = {
         "./api/routes/pokemonRoute.js",
         "./api/routes/typeRoute.js",
         "./api/routes/userRoute.js",
-        ".api/routes/authRoutes.js"
+        "./api/routes/authRoutes.js"
     ], // Path to the API docs
 };
 // Initialize swagger-jsdoc -> returns validated swagger spec in json format
@@ -39,6 +40,13 @@ const app = express();
 DataBase.connect();
 
 app.set("superSecret", process.env.SECRET);
+// Session setup
+app.use(session({
+    secret: "keyboard cat",
+    resave: false,
+    saveUninitialized: true,
+    cookie: { secure: true }
+}));
 
 if ( process.env.NODE_ENV === devEnv ) {
     app.use(logger("dev"));
