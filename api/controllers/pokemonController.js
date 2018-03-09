@@ -1,7 +1,6 @@
-const mongoose = require("mongoose");
 const Pokemon = require("../models/Pokemon");
 const Location = require("../models/Location");
-attributesSelect = "id_pokemon description name id_parent image id_national type1 type2";
+const attributesSelect = "id_pokemon description name id_parent image id_national type1 type2";
 
 /** list pokemons **/
 exports.list_all_pokemons = async function(req, res) {
@@ -51,7 +50,7 @@ exports.update_pokemon = async function(req, res) {
 exports.delete_pokemon = async function(req, res) {
     try {
         let query = Pokemon.remove({ id_national: req.params.Id });
-        const pokemons = await query.exec();
+        await query.exec();
         return res.json(true);
     } catch (error) {
         return res.status(500).send(error);
@@ -68,3 +67,6 @@ exports.set_location = async function(req, res) {
         return res.status(500).send(error);
     }
 };
+
+/** list marked pokemons **/
+exports.list_marked_pokemons = () => ([]);

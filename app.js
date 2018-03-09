@@ -18,8 +18,9 @@ const swaggerOptions = {
         },
     },
     apis: [
-        "./routes/index.js",
-        "./api/routes/pokemonRoute.js"
+        "./api/routes/index.js",
+        "./api/routes/pokemonRoute.js",
+        "./api/routes/typeRoute.js",
     ], // Path to the API docs
 };
 // Initialize swagger-jsdoc -> returns validated swagger spec in json format
@@ -42,8 +43,9 @@ app.use(cors(corsOptions));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.use("/", require("./routes/index"));
+app.use("/", require("./api/routes/index"));
 app.use("/pokemons", require("./api/routes/pokemonRoute"));
+app.use("/types", require("./api/routes/typeRoute"));
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
 // catch 404 and forward to error handler
@@ -61,7 +63,7 @@ app.use(function(err, req, res) {
 
     // render the error page
     res.status(err.status || 500);
-    res.render("error");
+    res.send(err);
 });
 
 module.exports = app;
