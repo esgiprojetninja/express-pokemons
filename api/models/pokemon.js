@@ -16,12 +16,12 @@ const pokemonSchema = new mongoose.Schema({
     id_national: {
         type: Number
     },
-    type1: {
-        type: Number
-    },
-    type2: {
-        type: Number
-    }
+    types: [
+        {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: "Type"
+        }
+    ]
 });
 
 module.exports = mongoose.model("Pokemon", pokemonSchema);

@@ -6,8 +6,9 @@
     "id_parent": null,
     "image": "http://romainlambot.fr/pokemons/images/1.png",
     "name": "Bulbizarre",
-    "type1": 11,
-    "type2": 12
+    "types": [
+      11, 12
+    ]
   },
   {
     "id_pokemon": 2,
@@ -16,8 +17,9 @@
     "id_parent": 0,
     "image": "http://romainlambot.fr/pokemons/images/2.png",
     "name": "Herbizarre",
-    "type1": 11,
-    "type2": 12
+    "types": [
+      11, 12
+    ]
   },
   {
     "id_pokemon": 3,
@@ -26,8 +28,9 @@
     "id_parent": 2,
     "image": "http://romainlambot.fr/pokemons/images/3.png",
     "name": "Florizarre",
-    "type1": 11,
-    "type2": 12
+    "types": [
+      11, 12
+    ]
   },
   {
     "id_pokemon": 4,
@@ -36,8 +39,9 @@
     "id_parent": null,
     "image": "http://romainlambot.fr/pokemons/images/4.png",
     "name": "Salamèche",
-    "type1": 7,
-    "type2": null
+    "types": [
+      7
+    ]
   },
   {
     "id_pokemon": 5,
@@ -46,8 +50,9 @@
     "id_parent": 4,
     "image": "http://romainlambot.fr/pokemons/images/5.png",
     "name": "Reptincel",
-    "type1": 7,
-    "type2": null
+    "types": [
+      7
+    ]
   },
   {
     "id_pokemon": 6,
@@ -56,8 +61,9 @@
     "id_parent": 5,
     "image": "http://romainlambot.fr/pokemons/images/6.png",
     "name": "Dracaufeu",
-    "type1": 7,
-    "type2": 18
+    "types": [
+      7, 18
+    ]
   },
   {
     "id_pokemon": 7,
@@ -66,8 +72,9 @@
     "id_parent": null,
     "image": "http://romainlambot.fr/pokemons/images/7.png",
     "name": "Carapuce",
-    "type1": 4,
-    "type2": null
+    "types": [
+      4
+    ]
   },
   {
     "id_pokemon": 8,
@@ -76,8 +83,9 @@
     "id_parent": 7,
     "image": "http://romainlambot.fr/pokemons/images/8.png",
     "name": "Carabaffe",
-    "type1": 4,
-    "type2": null
+    "types": [
+      4
+    ]
   },
   {
     "id_pokemon": 9,
@@ -86,8 +94,9 @@
     "id_parent": 8,
     "image": "http://romainlambot.fr/pokemons/images/9.png",
     "name": "Tortank",
-    "type1": 4,
-    "type2": null
+    "types": [ 
+      4
+    ]
   },
   {
     "id_pokemon": 10,
@@ -96,8 +105,9 @@
     "id_parent": null,
     "image": "http://romainlambot.fr/pokemons/images/10.png",
     "name": "Chenipan",
-    "type1": 9,
-    "type2": null
+    "types": [
+      9
+    ]
   },
   {
     "id_pokemon": 11,
@@ -106,8 +116,9 @@
     "id_parent": 10,
     "image": "http://romainlambot.fr/pokemons/images/11.png",
     "name": "Chrysacier",
-    "type1": 9,
-    "type2": null
+    "types": [
+      9
+    ]
   },
   {
     "id_pokemon": 12,
@@ -116,8 +127,9 @@
     "id_parent": 11,
     "image": "http://romainlambot.fr/pokemons/images/12.png",
     "name": "Papilusion",
-    "type1": 9,
-    "type2": 18
+    "types": [
+      9
+    ]
   },
   {
     "id_pokemon": 13,
@@ -126,8 +138,9 @@
     "id_parent": null,
     "image": "http://romainlambot.fr/pokemons/images/13.png",
     "name": "Aspicot",
-    "type1": 9,
-    "type2": 12
+    "types": [
+      9, 12
+    ]
   },
   {
     "id_pokemon": 14,
@@ -136,8 +149,9 @@
     "id_parent": 13,
     "image": "http://romainlambot.fr/pokemons/images/14.png",
     "name": "Coconfort",
-    "type1": 9,
-    "type2": 12
+    "types": [
+      9, 12
+    ]
   },
   {
     "id_pokemon": 15,
@@ -146,8 +160,9 @@
     "id_parent": 14,
     "image": "http://romainlambot.fr/pokemons/images/15.png",
     "name": "Dardargnan",
-    "type1": 9,
-    "type2": 12
+    "types": [
+      9, 12
+    ]
   },
   {
     "id_pokemon": 16,
@@ -156,8 +171,9 @@
     "id_parent": null,
     "image": "http://romainlambot.fr/pokemons/images/16.png",
     "name": "Roucool",
-    "type1": 10,
-    "type2": 18
+    "types": [
+      10, 18
+    ]
   },
   {
     "id_pokemon": 17,
@@ -166,8 +182,9 @@
     "id_parent": 16,
     "image": "http://romainlambot.fr/pokemons/images/17.png",
     "name": "Roucoups",
-    "type1": 10,
-    "type2": 18
+    "types": [
+      10, 18
+    ]
   },
   {
     "id_pokemon": 18,
@@ -176,8 +193,9 @@
     "id_parent": 17,
     "image": "http://romainlambot.fr/pokemons/images/18.png",
     "name": "Roucarnage",
-    "type1": 10,
-    "type2": 18
+    "types": [
+      10, 18
+    ]
   },
   {
     "id_pokemon": 19,
@@ -186,8 +204,9 @@
     "id_parent": null,
     "image": "http://romainlambot.fr/pokemons/images/19.png",
     "name": "Rattata",
-    "type1": 10,
-    "type2": 17
+    "types": [
+      10, 17
+    ]
   },
   {
     "id_pokemon": 20,
@@ -196,8 +215,9 @@
     "id_parent": 19,
     "image": "http://romainlambot.fr/pokemons/images/20.png",
     "name": "Rattatac",
-    "type1": 10,
-    "type2": 17
+    "types": [
+      10, 17
+    ]
   },
   {
     "id_pokemon": 21,
@@ -206,8 +226,9 @@
     "id_parent": null,
     "image": "http://romainlambot.fr/pokemons/images/21.png",
     "name": "Piafabec",
-    "type1": 10,
-    "type2": 18
+    "types": [
+      10, 18
+    ]
   },
   {
     "id_pokemon": 22,
@@ -216,8 +237,9 @@
     "id_parent": 21,
     "image": "http://romainlambot.fr/pokemons/images/22.png",
     "name": "Rapasdepic",
-    "type1": 10,
-    "type2": 18
+    "types": [
+      10, 18
+    ]
   },
   {
     "id_pokemon": 23,
@@ -226,8 +248,9 @@
     "id_parent": null,
     "image": "http://romainlambot.fr/pokemons/images/23.png",
     "name": "Abo",
-    "type1": 12,
-    "type2": null
+    "types": [
+      12
+    ]
   },
   {
     "id_pokemon": 24,
@@ -236,8 +259,9 @@
     "id_parent": 23,
     "image": "http://romainlambot.fr/pokemons/images/24.png",
     "name": "Arbok",
-    "type1": 12,
-    "type2": null
+    "types": [
+      12
+    ]
   },
   {
     "id_pokemon": 25,
@@ -246,8 +270,9 @@
     "id_parent": null,
     "image": "http://romainlambot.fr/pokemons/images/25.png",
     "name": "Pikachu",
-    "type1": 5,
-    "type2": null
+    "types": [
+      5
+    ]
   },
   {
     "id_pokemon": 26,
@@ -256,8 +281,9 @@
     "id_parent": 25,
     "image": "http://romainlambot.fr/pokemons/images/26.png",
     "name": "Raichu",
-    "type1": 5,
-    "type2": null
+    "types": [
+      5
+    ]
   },
   {
     "id_pokemon": 27,
@@ -266,8 +292,9 @@
     "id_parent": null,
     "image": "http://romainlambot.fr/pokemons/images/27.png",
     "name": "Sabelette",
-    "type1": 15,
-    "type2": 8
+    "types": [
+      15, 8
+    ]
   },
   {
     "id_pokemon": 28,
@@ -276,8 +303,9 @@
     "id_parent": 27,
     "image": "http://romainlambot.fr/pokemons/images/28.png",
     "name": "Sablaireau",
-    "type1": 15,
-    "type2": 8
+    "types": [
+      15, 8
+    ]
   },
   {
     "id_pokemon": 29,
@@ -286,8 +314,9 @@
     "id_parent": null,
     "image": "http://romainlambot.fr/pokemons/images/29.png",
     "name": "Nidoran femelle",
-    "type1": 12,
-    "type2": null
+    "types": [
+      12
+    ]
   },
   {
     "id_pokemon": 30,
@@ -296,8 +325,9 @@
     "id_parent": 29,
     "image": "http://romainlambot.fr/pokemons/images/30.png",
     "name": "Nidorina",
-    "type1": 12,
-    "type2": null
+    "types": [
+      12
+    ]
   },
   {
     "id_pokemon": 31,
@@ -306,8 +336,9 @@
     "id_parent": 30,
     "image": "http://romainlambot.fr/pokemons/images/31.png",
     "name": "Nidoqueen",
-    "type1": 12,
-    "type2": 15
+    "types": [
+      12, 15
+    ]
   },
   {
     "id_pokemon": 32,
@@ -316,8 +347,9 @@
     "id_parent": null,
     "image": "http://romainlambot.fr/pokemons/images/32.png",
     "name": "Nidoran mâle",
-    "type1": 12,
-    "type2": null
+    "types": [
+      12
+    ]
   },
   {
     "id_pokemon": 33,
@@ -326,8 +358,9 @@
     "id_parent": 32,
     "image": "http://romainlambot.fr/pokemons/images/33.png",
     "name": "Nidorino",
-    "type1": 12,
-    "type2": null
+    "types": [
+      12
+    ]
   },
   {
     "id_pokemon": 34,
@@ -336,8 +369,9 @@
     "id_parent": 33,
     "image": "http://romainlambot.fr/pokemons/images/34.png",
     "name": "Nidoking",
-    "type1": 12,
-    "type2": 15
+    "types": [
+      12, 15
+    ]
   },
   {
     "id_pokemon": 35,
@@ -346,8 +380,9 @@
     "id_parent": null,
     "image": "http://romainlambot.fr/pokemons/images/35.png",
     "name": "Mélofée",
-    "type1": 6,
-    "type2": null
+    "types": [
+      6
+    ]
   },
   {
     "id_pokemon": 36,
@@ -356,8 +391,9 @@
     "id_parent": 35,
     "image": "http://romainlambot.fr/pokemons/images/36.png",
     "name": "Mélodelfe",
-    "type1": 6,
-    "type2": null
+    "types": [
+      6
+    ]
   },
   {
     "id_pokemon": 37,
@@ -366,8 +402,9 @@
     "id_parent": null,
     "image": "http://romainlambot.fr/pokemons/images/37.png",
     "name": "Goupix",
-    "type1": 7,
-    "type2": 8
+    "types": [
+      7, 8
+    ]
   },
   {
     "id_pokemon": 38,
@@ -376,8 +413,9 @@
     "id_parent": 37,
     "image": "http://romainlambot.fr/pokemons/images/38.png",
     "name": "Feunard",
-    "type1": 7,
-    "type2": 8
+    "types": [
+      7, 8
+    ]
   },
   {
     "id_pokemon": 39,
@@ -386,8 +424,9 @@
     "id_parent": null,
     "image": "http://romainlambot.fr/pokemons/images/39.png",
     "name": "Rondoudou",
-    "type1": 10,
-    "type2": 6
+    "types": [ 
+      10, 6 
+    ]
   },
   {
     "id_pokemon": 40,
@@ -396,8 +435,9 @@
     "id_parent": 39,
     "image": "http://romainlambot.fr/pokemons/images/40.png",
     "name": "Grodoudou",
-    "type1": 10,
-    "type2": 6
+    "types": [ 
+      10, 6
+    ]
   },
   {
     "id_pokemon": 41,
@@ -406,8 +446,9 @@
     "id_parent": null,
     "image": "http://romainlambot.fr/pokemons/images/41.png",
     "name": "Nosferapti",
-    "type1": 12,
-    "type2": 18
+    "types": [ 
+      12, 18
+    ]
   },
   {
     "id_pokemon": 42,
@@ -416,8 +457,9 @@
     "id_parent": 41,
     "image": "http://romainlambot.fr/pokemons/images/42.png",
     "name": "Nosferalto",
-    "type1": 12,
-    "type2": 18
+    "types": [ 
+      12, 18
+    ]
   },
   {
     "id_pokemon": 43,
@@ -426,8 +468,9 @@
     "id_parent": null,
     "image": "http://romainlambot.fr/pokemons/images/43.png",
     "name": "Mystherbe",
-    "type1": 11,
-    "type2": 12
+    "types": [ 
+      11, 12
+    ]
   },
   {
     "id_pokemon": 44,
@@ -436,8 +479,9 @@
     "id_parent": 43,
     "image": "http://romainlambot.fr/pokemons/images/44.png",
     "name": "Ortide",
-    "type1": 11,
-    "type2": 12
+    "types": [ 
+      11, 12
+    ]
   },
   {
     "id_pokemon": 45,
@@ -446,8 +490,9 @@
     "id_parent": 44,
     "image": "http://romainlambot.fr/pokemons/images/45.png",
     "name": "Rafflesia",
-    "type1": 11,
-    "type2": 12
+    "types": [
+      11, 12
+    ]
   },
   {
     "id_pokemon": 46,
@@ -456,8 +501,9 @@
     "id_parent": null,
     "image": "http://romainlambot.fr/pokemons/images/46.png",
     "name": "Paras",
-    "type1": 9,
-    "type2": 11
+    "types": [ 
+      9, 11
+    ]
   },
   {
     "id_pokemon": 47,
@@ -466,8 +512,9 @@
     "id_parent": 46,
     "image": "http://romainlambot.fr/pokemons/images/47.png",
     "name": "Parasect",
-    "type1": 9,
-    "type2": 11
+    "types": [ 
+      9, 11
+    ]
   },
   {
     "id_pokemon": 48,
@@ -476,8 +523,9 @@
     "id_parent": null,
     "image": "http://romainlambot.fr/pokemons/images/48.png",
     "name": "Mimitoss",
-    "type1": 9,
-    "type2": 12
+    "types": [ 
+      9, 12
+    ]
   },
   {
     "id_pokemon": 49,
@@ -486,8 +534,9 @@
     "id_parent": 48,
     "image": "http://romainlambot.fr/pokemons/images/49.png",
     "name": "Aéromite",
-    "type1": 9,
-    "type2": 12
+    "types": [ 
+      9, 12
+    ]
   },
   {
     "id_pokemon": 50,
@@ -496,8 +545,9 @@
     "id_parent": null,
     "image": "http://romainlambot.fr/pokemons/images/50.png",
     "name": "Taupiqueur",
-    "type1": 15,
-    "type2": null
+    "types": [
+      15
+    ]
   },
   {
     "id_pokemon": 51,
@@ -506,8 +556,9 @@
     "id_parent": 50,
     "image": "http://romainlambot.fr/pokemons/images/51.png",
     "name": "Triopikeur",
-    "type1": 15,
-    "type2": null
+    "types": [ 
+      15
+    ]
   },
   {
     "id_pokemon": 52,
@@ -516,8 +567,9 @@
     "id_parent": null,
     "image": "http://romainlambot.fr/pokemons/images/52.png",
     "name": "Miaouss",
-    "type1": 10,
-    "type2": 17
+    "types": [ 
+      10, 17
+    ]
   },
   {
     "id_pokemon": 53,
@@ -526,8 +578,9 @@
     "id_parent": 52,
     "image": "http://romainlambot.fr/pokemons/images/53.png",
     "name": "Persian",
-    "type1": 10,
-    "type2": 17
+    "types": [ 
+      10, 17
+    ]
   },
   {
     "id_pokemon": 54,
@@ -536,8 +589,9 @@
     "id_parent": null,
     "image": "http://romainlambot.fr/pokemons/images/54.png",
     "name": "Psykokwak",
-    "type1": 4,
-    "type2": null
+    "types": [ 
+      4
+    ]
   },
   {
     "id_pokemon": 55,
@@ -546,8 +600,9 @@
     "id_parent": 54,
     "image": "http://romainlambot.fr/pokemons/images/55.png",
     "name": "Akwakwak",
-    "type1": 4,
-    "type2": null
+    "types": [
+       4
+    ]
   },
   {
     "id_pokemon": 56,
@@ -556,8 +611,9 @@
     "id_parent": null,
     "image": "http://romainlambot.fr/pokemons/images/56.png",
     "name": "Férosinge",
-    "type1": 2,
-    "type2": null
+    "types": [ 
+      2
+    ]
   },
   {
     "id_pokemon": 57,
@@ -566,8 +622,9 @@
     "id_parent": 56,
     "image": "http://romainlambot.fr/pokemons/images/57.png",
     "name": "Colossinge",
-    "type1": 2,
-    "type2": null
+    "types": [ 
+      2
+    ]
   },
   {
     "id_pokemon": 58,
@@ -576,8 +633,9 @@
     "id_parent": null,
     "image": "http://romainlambot.fr/pokemons/images/58.png",
     "name": "Caninos",
-    "type1": 7,
-    "type2": null
+    "types": [ 
+      7
+    ]
   },
   {
     "id_pokemon": 59,
@@ -586,8 +644,9 @@
     "id_parent": 58,
     "image": "http://romainlambot.fr/pokemons/images/59.png",
     "name": "Arcanin",
-    "type1": 7,
-    "type2": null
+    "types": [ 
+      7
+    ]
   },
   {
     "id_pokemon": 60,
@@ -596,8 +655,9 @@
     "id_parent": null,
     "image": "http://romainlambot.fr/pokemons/images/60.png",
     "name": "Ptitard",
-    "type1": 4,
-    "type2": null
+    "types": [ 
+      4
+    ]
   },
   {
     "id_pokemon": 61,
@@ -606,8 +666,9 @@
     "id_parent": 60,
     "image": "http://romainlambot.fr/pokemons/images/61.png",
     "name": "Têtarte",
-    "type1": 4,
-    "type2": null
+    "types": [ 
+      4
+    ]
   },
   {
     "id_pokemon": 62,
@@ -616,8 +677,9 @@
     "id_parent": 61,
     "image": "http://romainlambot.fr/pokemons/images/62.png",
     "name": "Tartard",
-    "type1": 4,
-    "type2": 2
+    "types": [ 
+      4, 2
+    ]
   },
   {
     "id_pokemon": 63,
@@ -626,8 +688,9 @@
     "id_parent": null,
     "image": "http://romainlambot.fr/pokemons/images/63.png",
     "name": "Abra",
-    "type1": 13,
-    "type2": null
+    "types": [ 
+      13
+    ]
   },
   {
     "id_pokemon": 64,
@@ -636,8 +699,9 @@
     "id_parent": 63,
     "image": "http://romainlambot.fr/pokemons/images/64.png",
     "name": "Kadabra",
-    "type1": 13,
-    "type2": null
+    "types": [ 
+      13
+    ]
   },
   {
     "id_pokemon": 65,
@@ -646,8 +710,9 @@
     "id_parent": 64,
     "image": "http://romainlambot.fr/pokemons/images/65.png",
     "name": "Alakazam",
-    "type1": 13,
-    "type2": null
+    "types": [ 
+      13
+    ]
   },
   {
     "id_pokemon": 66,
@@ -656,8 +721,9 @@
     "id_parent": null,
     "image": "http://romainlambot.fr/pokemons/images/66.png",
     "name": "Machoc",
-    "type1": 2,
-    "type2": null
+    "types": [ 
+      2
+    ]
   },
   {
     "id_pokemon": 67,
@@ -666,8 +732,9 @@
     "id_parent": 66,
     "image": "http://romainlambot.fr/pokemons/images/67.png",
     "name": "Machopeur",
-    "type1": 2,
-    "type2": null
+    "types": [ 
+      2
+    ]
   },
   {
     "id_pokemon": 68,
@@ -676,8 +743,9 @@
     "id_parent": 67,
     "image": "http://romainlambot.fr/pokemons/images/68.png",
     "name": "Mackogneur",
-    "type1": 2,
-    "type2": null
+    "types": [ 
+      2
+    ]
   },
   {
     "id_pokemon": 69,
@@ -686,8 +754,9 @@
     "id_parent": null,
     "image": "http://romainlambot.fr/pokemons/images/69.png",
     "name": "Chétiflor",
-    "type1": 11,
-    "type2": 12
+    "types": [ 
+      11, 12
+    ]
   },
   {
     "id_pokemon": 70,
@@ -696,8 +765,9 @@
     "id_parent": 69,
     "image": "http://romainlambot.fr/pokemons/images/70.png",
     "name": "Boustiflor",
-    "type1": 11,
-    "type2": 12
+    "types": [ 
+      11, 12
+    ]
   },
   {
     "id_pokemon": 71,
@@ -706,8 +776,9 @@
     "id_parent": 70,
     "image": "http://romainlambot.fr/pokemons/images/71.png",
     "name": "Empiflor",
-    "type1": 11,
-    "type2": 12
+    "types": [ 
+      11, 12
+    ]
   },
   {
     "id_pokemon": 72,
@@ -716,8 +787,9 @@
     "id_parent": null,
     "image": "http://romainlambot.fr/pokemons/images/72.png",
     "name": "Tentacool",
-    "type1": 4,
-    "type2": 12
+    "types": [ 
+      4, 12
+    ]
   },
   {
     "id_pokemon": 73,
@@ -726,8 +798,9 @@
     "id_parent": 72,
     "image": "http://romainlambot.fr/pokemons/images/73.png",
     "name": "Tentacruel",
-    "type1": 4,
-    "type2": 12
+    "types": [ 
+      4, 12
+    ]
   },
   {
     "id_pokemon": 74,
@@ -736,8 +809,9 @@
     "id_parent": null,
     "image": "http://romainlambot.fr/pokemons/images/74.png",
     "name": "Racaillou",
-    "type1": 14,
-    "type2": 15
+    "types": [ 
+      14, 15
+    ]
   },
   {
     "id_pokemon": 75,
@@ -746,8 +820,9 @@
     "id_parent": 74,
     "image": "http://romainlambot.fr/pokemons/images/75.png",
     "name": "Gravalanch",
-    "type1": 14,
-    "type2": 15
+    "types": [ 
+      14, 15
+    ]
   },
   {
     "id_pokemon": 76,
@@ -756,8 +831,9 @@
     "id_parent": 75,
     "image": "http://romainlambot.fr/pokemons/images/76.png",
     "name": "Grolem",
-    "type1": 14,
-    "type2": 15
+    "types": [ 
+      14, 15
+    ]
   },
   {
     "id_pokemon": 77,
@@ -766,8 +842,9 @@
     "id_parent": null,
     "image": "http://romainlambot.fr/pokemons/images/77.png",
     "name": "Ponyta",
-    "type1": 7,
-    "type2": null
+    "types": [ 
+      7
+    ]
   },
   {
     "id_pokemon": 78,
@@ -776,8 +853,9 @@
     "id_parent": 77,
     "image": "http://romainlambot.fr/pokemons/images/78.png",
     "name": "Galopa",
-    "type1": 7,
-    "type2": null
+    "types": [ 
+      7
+    ]
   },
   {
     "id_pokemon": 79,
@@ -786,8 +864,9 @@
     "id_parent": null,
     "image": "http://romainlambot.fr/pokemons/images/79.png",
     "name": "Ramoloss",
-    "type1": 4,
-    "type2": 13
+    "types": [ 
+      4, 13
+    ]
   },
   {
     "id_pokemon": 80,
@@ -796,8 +875,9 @@
     "id_parent": 79,
     "image": "http://romainlambot.fr/pokemons/images/80.png",
     "name": "Flagadoss",
-    "type1": 4,
-    "type2": 13
+    "types": [ 
+      4, 13
+    ]
   },
   {
     "id_pokemon": 81,
@@ -806,8 +886,9 @@
     "id_parent": null,
     "image": "http://romainlambot.fr/pokemons/images/81.png",
     "name": "Magnéti",
-    "type1": 5,
-    "type2": 1
+    "types": [ 
+      5, 1
+    ]
   },
   {
     "id_pokemon": 82,
@@ -816,8 +897,9 @@
     "id_parent": 81,
     "image": "http://romainlambot.fr/pokemons/images/82.png",
     "name": "Magnéton",
-    "type1": 5,
-    "type2": 1
+    "types": [ 
+      5, 1
+    ]
   },
   {
     "id_pokemon": 83,
@@ -826,8 +908,9 @@
     "id_parent": null,
     "image": "http://romainlambot.fr/pokemons/images/83.png",
     "name": "Canarticho",
-    "type1": 10,
-    "type2": 18
+    "types": [ 
+      10, 18
+    ]
   },
   {
     "id_pokemon": 84,
@@ -836,8 +919,9 @@
     "id_parent": null,
     "image": "http://romainlambot.fr/pokemons/images/84.png",
     "name": "Doduo",
-    "type1": 10,
-    "type2": 18
+    "types": [ 
+      10, 18
+    ]
   },
   {
     "id_pokemon": 85,
@@ -846,8 +930,9 @@
     "id_parent": 84,
     "image": "http://romainlambot.fr/pokemons/images/85.png",
     "name": "Dodrio",
-    "type1": 10,
-    "type2": 18
+    "types": [ 
+      10, 18
+    ]
   },
   {
     "id_pokemon": 86,
@@ -856,8 +941,9 @@
     "id_parent": null,
     "image": "http://romainlambot.fr/pokemons/images/86.png",
     "name": "Otaria",
-    "type1": 4,
-    "type2": null
+    "types": [ 
+      4
+    ]
   },
   {
     "id_pokemon": 87,
@@ -866,8 +952,9 @@
     "id_parent": 86,
     "image": "http://romainlambot.fr/pokemons/images/87.png",
     "name": "Lamantine",
-    "type1": 4,
-    "type2": 8
+    "types": [ 
+      4, 8
+    ]
   },
   {
     "id_pokemon": 88,
@@ -876,8 +963,9 @@
     "id_parent": null,
     "image": "http://romainlambot.fr/pokemons/images/88.png",
     "name": "Tadmorv",
-    "type1": 12,
-    "type2": null
+    "types": [ 
+      12
+    ]
   },
   {
     "id_pokemon": 89,
@@ -886,8 +974,9 @@
     "id_parent": 88,
     "image": "http://romainlambot.fr/pokemons/images/89.png",
     "name": "Grotadmorv",
-    "type1": 12,
-    "type2": null
+    "types": [ 
+      12
+    ]
   },
   {
     "id_pokemon": 90,
@@ -896,8 +985,9 @@
     "id_parent": null,
     "image": "http://romainlambot.fr/pokemons/images/90.png",
     "name": "Kokiyas",
-    "type1": 4,
-    "type2": null
+    "types": [ 
+      4
+    ]
   },
   {
     "id_pokemon": 91,
@@ -906,8 +996,9 @@
     "id_parent": 90,
     "image": "http://romainlambot.fr/pokemons/images/91.png",
     "name": "Crustabri",
-    "type1": 4,
-    "type2": 8
+    "types": [ 
+      4, 8
+    ]
   },
   {
     "id_pokemon": 92,
@@ -916,8 +1007,9 @@
     "id_parent": null,
     "image": "http://romainlambot.fr/pokemons/images/92.png",
     "name": "Fantominus",
-    "type1": 16,
-    "type2": 12
+    "types": [ 
+      16, 12
+    ]
   },
   {
     "id_pokemon": 93,
@@ -926,8 +1018,9 @@
     "id_parent": 92,
     "image": "http://romainlambot.fr/pokemons/images/93.png",
     "name": "Spectrum",
-    "type1": 16,
-    "type2": 12
+    "types": [ 
+      16, 12
+    ]
   },
   {
     "id_pokemon": 94,
@@ -936,8 +1029,9 @@
     "id_parent": 93,
     "image": "http://romainlambot.fr/pokemons/images/94.png",
     "name": "Ectoplasma",
-    "type1": 16,
-    "type2": 12
+    "types": [ 
+      16, 12
+    ]
   },
   {
     "id_pokemon": 95,
@@ -946,8 +1040,9 @@
     "id_parent": null,
     "image": "http://romainlambot.fr/pokemons/images/95.png",
     "name": "Onix",
-    "type1": 14,
-    "type2": 15
+    "types": [ 
+      14, 15
+    ]
   },
   {
     "id_pokemon": 96,
@@ -956,8 +1051,9 @@
     "id_parent": null,
     "image": "http://romainlambot.fr/pokemons/images/96.png",
     "name": "Soporifik",
-    "type1": 13,
-    "type2": null
+    "types": [ 
+      13
+    ]
   },
   {
     "id_pokemon": 97,
@@ -966,8 +1062,9 @@
     "id_parent": 96,
     "image": "http://romainlambot.fr/pokemons/images/97.png",
     "name": "Hypnomade",
-    "type1": 13,
-    "type2": null
+    "types": [ 
+      13
+    ]
   },
   {
     "id_pokemon": 98,
@@ -976,8 +1073,9 @@
     "id_parent": null,
     "image": "http://romainlambot.fr/pokemons/images/98.png",
     "name": "Krabby",
-    "type1": 4,
-    "type2": null
+    "types": [ 
+      4
+    ]
   },
   {
     "id_pokemon": 99,
@@ -986,8 +1084,9 @@
     "id_parent": 98,
     "image": "http://romainlambot.fr/pokemons/images/99.png",
     "name": "Krabboss",
-    "type1": 4,
-    "type2": null
+    "types": [ 
+      4
+    ]
   },
   {
     "id_pokemon": 100,
@@ -996,8 +1095,9 @@
     "id_parent": null,
     "image": "http://romainlambot.fr/pokemons/images/100.png",
     "name": "Voltorbe",
-    "type1": 5,
-    "type2": null
+    "types": [ 
+      5
+    ]
   },
   {
     "id_pokemon": 101,
@@ -1006,8 +1106,9 @@
     "id_parent": 100,
     "image": "http://romainlambot.fr/pokemons/images/101.png",
     "name": "Électrode",
-    "type1": 5,
-    "type2": null
+    "types": [ 
+      5
+    ]
   },
   {
     "id_pokemon": 102,
@@ -1016,8 +1117,9 @@
     "id_parent": null,
     "image": "http://romainlambot.fr/pokemons/images/102.png",
     "name": "Noeunoeuf",
-    "type1": 11,
-    "type2": 13
+    "types": [ 
+      11, 13
+    ]
   },
   {
     "id_pokemon": 103,
@@ -1026,8 +1128,9 @@
     "id_parent": 102,
     "image": "http://romainlambot.fr/pokemons/images/103.png",
     "name": "Noadkoko",
-    "type1": 11,
-    "type2": 13
+    "types": [ 
+      11, 13
+    ]
   },
   {
     "id_pokemon": 104,
@@ -1036,8 +1139,9 @@
     "id_parent": null,
     "image": "http://romainlambot.fr/pokemons/images/104.png",
     "name": "Osselait",
-    "type1": 15,
-    "type2": null
+    "types": [ 
+      15
+    ]
   },
   {
     "id_pokemon": 105,
@@ -1046,8 +1150,9 @@
     "id_parent": 104,
     "image": "http://romainlambot.fr/pokemons/images/105.png",
     "name": "Ossatueur",
-    "type1": 15,
-    "type2": 7
+    "types": [ 
+      15, 7
+    ]
   },
   {
     "id_pokemon": 106,
@@ -1056,8 +1161,9 @@
     "id_parent": null,
     "image": "http://romainlambot.fr/pokemons/images/106.png",
     "name": "Kicklee",
-    "type1": 2,
-    "type2": null
+    "types": [ 
+      2
+    ]
   },
   {
     "id_pokemon": 107,
@@ -1066,8 +1172,9 @@
     "id_parent": 106,
     "image": "http://romainlambot.fr/pokemons/images/107.png",
     "name": "Tygnon",
-    "type1": 2,
-    "type2": null
+    "types": [ 
+      2
+    ]
   },
   {
     "id_pokemon": 108,
@@ -1076,8 +1183,9 @@
     "id_parent": null,
     "image": "http://romainlambot.fr/pokemons/images/108.png",
     "name": "Excelangue",
-    "type1": 10,
-    "type2": null
+    "types": [ 
+      10
+    ]
   },
   {
     "id_pokemon": 109,
@@ -1086,8 +1194,9 @@
     "id_parent": null,
     "image": "http://romainlambot.fr/pokemons/images/109.png",
     "name": "Smogo",
-    "type1": 12,
-    "type2": null
+    "types": [ 
+      12
+    ]
   },
   {
     "id_pokemon": 110,
@@ -1096,8 +1205,9 @@
     "id_parent": 109,
     "image": "http://romainlambot.fr/pokemons/images/110.png",
     "name": "Smogogo",
-    "type1": 12,
-    "type2": null
+    "types": [ 
+      12
+    ]
   },
   {
     "id_pokemon": 111,
@@ -1106,8 +1216,9 @@
     "id_parent": null,
     "image": "http://romainlambot.fr/pokemons/images/111.png",
     "name": "Rhinocorne",
-    "type1": 15,
-    "type2": 14
+    "types": [ 
+      15, 14
+    ]
   },
   {
     "id_pokemon": 112,
@@ -1116,8 +1227,9 @@
     "id_parent": 111,
     "image": "http://romainlambot.fr/pokemons/images/112.png",
     "name": "Rhinoféros",
-    "type1": 15,
-    "type2": 14
+    "types": [ 
+      15, 14
+    ]
   },
   {
     "id_pokemon": 113,
@@ -1126,8 +1238,9 @@
     "id_parent": null,
     "image": "http://romainlambot.fr/pokemons/images/113.png",
     "name": "Leveinard",
-    "type1": 10,
-    "type2": null
+    "types": [ 
+      10
+    ]
   },
   {
     "id_pokemon": 114,
@@ -1136,8 +1249,9 @@
     "id_parent": null,
     "image": "http://romainlambot.fr/pokemons/images/114.png",
     "name": "Saquedeneu",
-    "type1": 11,
-    "type2": null
+    "types": [ 
+      11
+    ]
   },
   {
     "id_pokemon": 115,
@@ -1146,8 +1260,9 @@
     "id_parent": null,
     "image": "http://romainlambot.fr/pokemons/images/115.png",
     "name": "Kangourex",
-    "type1": 10,
-    "type2": null
+    "types": [ 
+      10
+    ]
   },
   {
     "id_pokemon": 116,
@@ -1156,8 +1271,9 @@
     "id_parent": null,
     "image": "http://romainlambot.fr/pokemons/images/116.png",
     "name": "Hypotrempe",
-    "type1": 4,
-    "type2": null
+    "types": [ 
+      4
+    ]
   },
   {
     "id_pokemon": 117,
@@ -1166,8 +1282,9 @@
     "id_parent": 116,
     "image": "http://romainlambot.fr/pokemons/images/117.png",
     "name": "Hypocéan",
-    "type1": 4,
-    "type2": null
+    "types": [ 
+      4
+    ]
   },
   {
     "id_pokemon": 118,
@@ -1176,8 +1293,9 @@
     "id_parent": null,
     "image": "http://romainlambot.fr/pokemons/images/118.png",
     "name": "Poissirène",
-    "type1": 4,
-    "type2": null
+    "types": [ 
+      4
+    ]
   },
   {
     "id_pokemon": 119,
@@ -1186,8 +1304,9 @@
     "id_parent": 118,
     "image": "http://romainlambot.fr/pokemons/images/119.png",
     "name": "Poissoroy",
-    "type1": 4,
-    "type2": null
+    "types": [ 
+      4
+    ]
   },
   {
     "id_pokemon": 120,
@@ -1196,8 +1315,9 @@
     "id_parent": null,
     "image": "http://romainlambot.fr/pokemons/images/120.png",
     "name": "Stari",
-    "type1": 4,
-    "type2": null
+    "types": [ 
+      4
+    ]
   },
   {
     "id_pokemon": 121,
@@ -1206,8 +1326,9 @@
     "id_parent": 120,
     "image": "http://romainlambot.fr/pokemons/images/121.png",
     "name": "Staross",
-    "type1": 4,
-    "type2": 13
+    "types": [ 
+      4, 13
+    ]
   },
   {
     "id_pokemon": 122,
@@ -1216,8 +1337,9 @@
     "id_parent": null,
     "image": "http://romainlambot.fr/pokemons/images/122.png",
     "name": "M.Mime",
-    "type1": 13,
-    "type2": 6
+    "types": [ 
+      13, 6
+    ]
   },
   {
     "id_pokemon": 123,
@@ -1226,8 +1348,9 @@
     "id_parent": null,
     "image": "http://romainlambot.fr/pokemons/images/123.png",
     "name": "Insécateur",
-    "type1": 9,
-    "type2": 18
+    "types": [ 
+      9, 18
+    ]
   },
   {
     "id_pokemon": 124,
@@ -1236,8 +1359,9 @@
     "id_parent": null,
     "image": "http://romainlambot.fr/pokemons/images/124.png",
     "name": "Lippoutou",
-    "type1": 8,
-    "type2": 13
+    "types": [ 
+      8, 13
+    ]
   },
   {
     "id_pokemon": 125,
@@ -1246,8 +1370,9 @@
     "id_parent": null,
     "image": "http://romainlambot.fr/pokemons/images/125.png",
     "name": "Élektek",
-    "type1": 5,
-    "type2": null
+    "types": [ 
+      5
+    ]
   },
   {
     "id_pokemon": 126,
@@ -1256,8 +1381,9 @@
     "id_parent": null,
     "image": "http://romainlambot.fr/pokemons/images/126.png",
     "name": "Magmar",
-    "type1": 7,
-    "type2": null
+    "types": [ 
+      7
+    ]
   },
   {
     "id_pokemon": 127,
@@ -1266,8 +1392,9 @@
     "id_parent": null,
     "image": "http://romainlambot.fr/pokemons/images/127.png",
     "name": "Scarabrute",
-    "type1": 9,
-    "type2": null
+    "types": [ 
+      9
+    ]
   },
   {
     "id_pokemon": 128,
@@ -1276,8 +1403,9 @@
     "id_parent": null,
     "image": "http://romainlambot.fr/pokemons/images/128.png",
     "name": "Tauros",
-    "type1": 10,
-    "type2": null
+    "types": [ 
+      10
+    ]
   },
   {
     "id_pokemon": 129,
@@ -1286,8 +1414,9 @@
     "id_parent": null,
     "image": "http://romainlambot.fr/pokemons/images/129.png",
     "name": "Magicarpe",
-    "type1": 4,
-    "type2": null
+    "types": [ 
+      4
+    ]
   },
   {
     "id_pokemon": 130,
@@ -1296,8 +1425,9 @@
     "id_parent": 129,
     "image": "http://romainlambot.fr/pokemons/images/130.png",
     "name": "Léviator",
-    "type1": 4,
-    "type2": 18
+    "types": [ 
+      4, 18
+    ]
   },
   {
     "id_pokemon": 131,
@@ -1306,8 +1436,9 @@
     "id_parent": 130,
     "image": "http://romainlambot.fr/pokemons/images/131.png",
     "name": "Lokhlass",
-    "type1": 4,
-    "type2": 8
+    "types": [ 
+      4, 8
+    ]
   },
   {
     "id_pokemon": 132,
@@ -1316,8 +1447,9 @@
     "id_parent": null,
     "image": "http://romainlambot.fr/pokemons/images/132.png",
     "name": "Métamorph",
-    "type1": 10,
-    "type2": null
+    "types": [ 
+      10
+    ]
   },
   {
     "id_pokemon": 133,
@@ -1326,8 +1458,9 @@
     "id_parent": null,
     "image": "http://romainlambot.fr/pokemons/images/133.png",
     "name": "Évoli",
-    "type1": 10,
-    "type2": null
+    "types": [ 
+      10
+    ]
   },
   {
     "id_pokemon": 134,
@@ -1336,8 +1469,9 @@
     "id_parent": 133,
     "image": "http://romainlambot.fr/pokemons/images/134.png",
     "name": "Aquali",
-    "type1": 4,
-    "type2": null
+    "types": [ 
+      4
+    ]
   },
   {
     "id_pokemon": 135,
@@ -1346,8 +1480,9 @@
     "id_parent": 133,
     "image": "http://romainlambot.fr/pokemons/images/135.png",
     "name": "Voltali",
-    "type1": 5,
-    "type2": null
+    "types": [ 
+      5
+    ]
   },
   {
     "id_pokemon": 136,
@@ -1356,8 +1491,9 @@
     "id_parent": 133,
     "image": "http://romainlambot.fr/pokemons/images/136.png",
     "name": "Pyroli",
-    "type1": 7,
-    "type2": null
+    "types": [ 
+      7
+    ]
   },
   {
     "id_pokemon": 137,
@@ -1366,8 +1502,9 @@
     "id_parent": null,
     "image": "http://romainlambot.fr/pokemons/images/137.png",
     "name": "Porygon",
-    "type1": 10,
-    "type2": null
+    "types": [ 
+      10
+    ]
   },
   {
     "id_pokemon": 138,
@@ -1376,8 +1513,9 @@
     "id_parent": null,
     "image": "http://romainlambot.fr/pokemons/images/138.png",
     "name": "Amonita",
-    "type1": 14,
-    "type2": 4
+    "types": [ 
+      14, 4
+    ]
   },
   {
     "id_pokemon": 139,
@@ -1386,8 +1524,9 @@
     "id_parent": 138,
     "image": "http://romainlambot.fr/pokemons/images/139.png",
     "name": "Amonistar",
-    "type1": 14,
-    "type2": 4
+    "types": [ 
+      14, 4
+    ]
   },
   {
     "id_pokemon": 140,
@@ -1396,8 +1535,9 @@
     "id_parent": null,
     "image": "http://romainlambot.fr/pokemons/images/140.png",
     "name": "Kabuto",
-    "type1": 14,
-    "type2": 4
+    "types": [ 
+      14, 4
+    ]
   },
   {
     "id_pokemon": 141,
@@ -1406,8 +1546,9 @@
     "id_parent": 140,
     "image": "http://romainlambot.fr/pokemons/images/141.png",
     "name": "Kabutops",
-    "type1": 14,
-    "type2": 4
+    "types": [ 
+      14, 4
+    ]
   },
   {
     "id_pokemon": 142,
@@ -1416,8 +1557,9 @@
     "id_parent": null,
     "image": "http://romainlambot.fr/pokemons/images/142.png",
     "name": "Ptéra",
-    "type1": 14,
-    "type2": 18
+    "types": [ 
+      14, 18
+    ]
   },
   {
     "id_pokemon": 143,
@@ -1426,8 +1568,9 @@
     "id_parent": null,
     "image": "http://romainlambot.fr/pokemons/images/143.png",
     "name": "Ronflex",
-    "type1": 10,
-    "type2": null
+    "types": [ 
+      10
+    ]
   },
   {
     "id_pokemon": 144,
@@ -1436,8 +1579,9 @@
     "id_parent": null,
     "image": "http://romainlambot.fr/pokemons/images/144.png",
     "name": "Artikodin",
-    "type1": 8,
-    "type2": 18
+    "types": [ 
+      8, 18
+    ]
   },
   {
     "id_pokemon": 145,
@@ -1446,8 +1590,9 @@
     "id_parent": null,
     "image": "http://romainlambot.fr/pokemons/images/145.png",
     "name": "Électhor",
-    "type1": 5,
-    "type2": 18
+    "types": [ 
+      5, 18
+    ]
   },
   {
     "id_pokemon": 146,
@@ -1456,8 +1601,9 @@
     "id_parent": null,
     "image": "http://romainlambot.fr/pokemons/images/146.png",
     "name": "Sulfura",
-    "type1": 7,
-    "type2": 18
+    "types": [ 
+      7, 18
+    ]
   },
   {
     "id_pokemon": 147,
@@ -1466,8 +1612,9 @@
     "id_parent": null,
     "image": "http://romainlambot.fr/pokemons/images/147.png",
     "name": "Minidraco",
-    "type1": 3,
-    "type2": null
+    "types": [ 
+      3
+    ]
   },
   {
     "id_pokemon": 148,
@@ -1476,8 +1623,9 @@
     "id_parent": 147,
     "image": "http://romainlambot.fr/pokemons/images/148.png",
     "name": "Draco",
-    "type1": 3,
-    "type2": null
+    "types": [ 
+      3
+    ]
   },
   {
     "id_pokemon": 149,
@@ -1486,8 +1634,9 @@
     "id_parent": 148,
     "image": "http://romainlambot.fr/pokemons/images/149.png",
     "name": "Dracolosse",
-    "type1": 3,
-    "type2": 18
+    "types": [ 
+      3, 18
+    ]
   },
   {
     "id_pokemon": 150,
@@ -1496,8 +1645,9 @@
     "id_parent": null,
     "image": "http://romainlambot.fr/pokemons/images/150.png",
     "name": "Mewtwo",
-    "type1": 13,
-    "type2": null
+    "types": [ 
+      13
+    ]
   },
   {
     "id_pokemon": 151,
@@ -1506,7 +1656,8 @@
     "id_parent": null,
     "image": "http://romainlambot.fr/pokemons/images/151.png",
     "name": "Mew",
-    "type1": 13,
-    "type2": null
+    "types": [ 
+      13
+    ]
   }
 ]

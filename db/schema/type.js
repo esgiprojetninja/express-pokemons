@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 const { Schema } = mongoose;
-const COLLECTION_NAME = "Pokemon";
+const COLLECTION_NAME = "Type";
 const SEED_NUMBER = 10;
 let COLLECTION = null;
 const fs = require("fs");
@@ -39,16 +39,13 @@ const _createCollection = () => {
 
 const seed = () => {
 
-    pokemonData = JSON.parse(fs.readFileSync("pokemon_data.json", "utf8"));
+    pokemonTypeData = JSON.parse(fs.readFileSync("pokemon_type_data.json", "utf8"));
     
-    for (item in pokemonData) {
+    for (item in pokemonTypeData) {
         const todo = new COLLECTION({
-            name: pokemonData[item].name,
-            description: pokemonData[item].description,
-            id_parent: pokemonData[item].id_parent,
-            image: pokemonData[item].image,
-            id_national: pokemonData[item].id_national,
-            types: pokemonData[item].types
+            id_type: pokemonTypeData[item].id_type,
+            name: pokemonTypeData[item].name,
+            color: pokemonTypeData[item].color
         });
         todo.save();
     }

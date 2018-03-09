@@ -1,12 +1,13 @@
 let mongoose = require("mongoose"),
     Pokemon = require("../models/Pokemon"),
-    Location = require("../models/Location");
+    Location = require("../models/Location"),
+    Type = require("../models/Type");
 attributesSelect = "id_pokemon description name id_parent image id_national type1 type2";
 
 /** list pokemons **/
 exports.list_all_pokemons = async function(req, res) {
     try {
-        let query = Pokemon.find({}).select(attributesSelect).sort([["id_national", "ascending"]]);
+        let query = Pokemon.find({}).select(attributesSelect).sort([["id_national", "ascending"]]).populate("types");
         const pokemons = await query.exec();
         return res.json(pokemons);
     } catch (error) {
@@ -17,7 +18,7 @@ exports.list_all_pokemons = async function(req, res) {
 /** display pokemon **/
 exports.read_pokemon = async function(req, res) {
     try {
-        let query = Pokemon.find({ id_national: req.params.Id }).select(attributesSelect);
+        let query = Pokemon.find({ id_national: req.params.Id }).select(attributesSelect).populate("types");
         const pokemons = await query.exec();
         return res.json(pokemons);
     } catch (error) {
@@ -73,7 +74,7 @@ exports.set_location = async function(req, res) {
 exports.get_marked = async function(req, res) {
     let datetime = new Date();
     try {
-        let query = Location.find({ where:{ $and:[{ date_created: { $lte: this.datetime } },{ date_created: { $gte: this.datetime } }] }, include: [Pokemon] }).select(attributesSelect);
+        let query = Location.find({ where:{ $and:[{ date_created: { $lte: this.datetime } },{ date_created: { $gte: this.datetime } }] }, include: [Pokemon] }).select("id_pokemon description name id_parent image id_national type1 type2 date_created latitude longitude");
         const pokemons = await query.exec();
         return res.json(pokemons);
     } catch (error) {
