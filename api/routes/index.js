@@ -1,6 +1,11 @@
 const express = require("express");
 const fs = require("fs");
+
+const tokenUtils = require("../../utils/token");
+
 const router = express.Router();
+
+router.use(tokenUtils.checkToken);
 
 router.get("/", (req, res) => {
     res.send({ coucou: "coucou" });

@@ -12,7 +12,7 @@ const userSchema = new mongoose.Schema({
     },
     pokemons: [{
         type: mongoose.Schema.Types.ObjectId,
-        ref: "Story"
+        ref: "Pokemon"
     }]
 });
 

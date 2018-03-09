@@ -1,3 +1,4 @@
+const jwt = require("jsonwebtoken");
 const User = require("../models/User");
 const attributesSelect = "id email name pokemons";
 
@@ -65,8 +66,8 @@ exports.create_user = async function(req, res) {
 exports.update_user = async function(req, res) {
     try {
         let query = User.findOneAndUpdate({ _id: req.params.Id }, req.body, { new: true });
-        const pokemons = await query.exec();
-        return res.json(pokemons);
+        const user = await query.exec();
+        return res.json(user);
     } catch (error) {
         return res.status(500).send(error);
     }
@@ -82,6 +83,37 @@ exports.delete_user = async function(req, res) {
         let query = User.remove({ _id: req.params.Id });
         await query.exec();
         return res.json(true);
+    } catch (error) {
+        return res.status(500).send(error);
+    }
+};
+
+
+/**
+ * Logs a user in.
+ * @param {*} res
+ * @param {*} res
+ */
+exports.log_user_in = async function(req, res) {
+    const { email, password } = req.body;
+    if (!email || email === "") {
+        return res.status(401).send("Email is mandatory.");
+    }
+    try {
+        let query = User.findOne({ email: req.body.email });
+        const user = await query.exec();
+        if (!user || password !== user.password) {
+            return res.status(401).send("Couldn't authenticate.");
+        }
+        const token = jwt.sign({
+            exp: 30000000000,
+            data: user._id
+        }, process.env.SECRET);
+        return res.json({
+            success: true,
+            message: "Login success",
+            token: token
+        });
     } catch (error) {
         return res.status(500).send(error);
     }

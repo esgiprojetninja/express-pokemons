@@ -3,6 +3,7 @@ const express = require("express");
 const cors = require("cors");
 const logger = require("morgan");
 const bodyParser = require("body-parser");
+
 const DataBase = require("./db");
 const { devEnv } = require("./utils/consts");
 
@@ -36,6 +37,8 @@ const corsOptions = {
 const app = express();
 DataBase.connect();
 
+app.set("superSecret", process.env.SECRET);
+
 if ( process.env.NODE_ENV === devEnv ) {
     app.use(logger("dev"));
 }
@@ -48,6 +51,7 @@ app.use("/", require("./api/routes/index"));
 app.use("/pokemons", require("./api/routes/pokemonRoute"));
 app.use("/types", require("./api/routes/typeRoute"));
 app.use("/users", require("./api/routes/userRoute"));
+app.use("/auth", require("./api/routes/authRoutes"));
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
 // catch 404 and forward to error handler

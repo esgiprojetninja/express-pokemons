@@ -1,6 +1,11 @@
 const express = require("express");
-const router = express.Router();
+
+const tokenUtils = require("../../utils/token");
 const UserController = require("../controllers/userController");
+
+const router = express.Router();
+
+router.use(tokenUtils.checkToken);
 
 /**
  * @swagger
@@ -23,7 +28,7 @@ const UserController = require("../controllers/userController");
 
 /**
  * @swagger
- * /users/:
+ * /auth/:
  *   get:
  *     description: Returns users.
  *     produces:
@@ -40,7 +45,7 @@ router.get("/", UserController.list_all_users);
 
 /**
  * @swagger
- * /users/:
+ * /auth/:
  *   post:
  *     description: Creates a new user.
  *     produces:
@@ -131,7 +136,7 @@ router.put("/:Id", UserController.update_user);
  *        type: integer
  *     responses:
  *       200:
- *         description: Pokemon deleted.
+ *         description: User deleted.
  */
 router.delete("/:Id", UserController.delete_user);
 
