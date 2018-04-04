@@ -1,10 +1,13 @@
 require("dotenv").config({ path: "./.env.local" });
 const express = require("express");
 const cors = require("cors");
+const session = require("express-session");
 const logger = require("morgan");
 const bodyParser = require("body-parser");
+
 const DataBase = require("./db");
-const { devEnv } = require("./utils/consts");
+const { devEnv, testEnv } = require("./utils/consts");
+const tokenUtils = require("./utils/token");
 
 const swaggerUi = require("swagger-ui-express");
 const swaggerJSDoc = require("swagger-jsdoc");
@@ -21,6 +24,8 @@ const swaggerOptions = {
         "./api/routes/index.js",
         "./api/routes/pokemonRoute.js",
         "./api/routes/typeRoute.js",
+        "./api/routes/userRoute.js",
+        "./api/routes/authRoutes.js"
     ], // Path to the API docs
 };
 // Initialize swagger-jsdoc -> returns validated swagger spec in json format
@@ -35,6 +40,15 @@ const corsOptions = {
 const app = express();
 DataBase.connect();
 
+app.set("superSecret", process.env.SECRET);
+// Session setup
+app.use(session({
+    secret: "keyboard cat",
+    resave: false,
+    saveUninitialized: true,
+    cookie: { secure: true }
+}));
+
 if ( process.env.NODE_ENV === devEnv ) {
     app.use(logger("dev"));
 }
@@ -43,10 +57,17 @@ app.use(cors(corsOptions));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
+app.use("/auth", require("./api/routes/authRoutes"));
+app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
+
+if (process.env.NODE_ENV !== testEnv) {
+    app.use(tokenUtils.checkToken);
+}
+
 app.use("/", require("./api/routes/index"));
 app.use("/pokemons", require("./api/routes/pokemonRoute"));
 app.use("/types", require("./api/routes/typeRoute"));
-app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
+app.use("/users", require("./api/routes/userRoute"));
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
